@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg134"
+   sodipodi:docname="home-search.svg"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs138" />
+  <sodipodi:namedview
+     id="namedview136"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.1953125"
+     inkscape:cx="256"
+     inkscape:cy="242.61438"
+     inkscape:window-width="1390"
+     inkscape:window-height="898"
+     inkscape:window-x="40"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg134" />
+  <!--! Font Awesome Pro 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc. -->
+  <path
+     d="m 347.72028,163.83924 a 81.931174,82.162145 0 1 1 0,164.32428 81.931174,82.162145 0 1 1 0,-164.32428 z m 0,205.40536 c 26.4996,0 51.07897,-8.47298 71.17771,-22.72297 l 57.73588,57.89864 c 7.93707,7.95945 20.99485,7.95945 28.93193,0 7.93708,-7.95947 7.93708,-21.05406 0,-29.01351 l -57.73586,-57.89864 c 14.33794,-20.28377 22.7871,-44.93243 22.7871,-71.50675 0,-68.04052 -55.04751,-123.24321 -122.89676,-123.24321 -67.84926,0 -122.89676,55.20269 -122.89676,123.24321 0,68.04054 55.0475,123.24323 122.89676,123.24323 z"
+     id="path986"
+     style="stroke-width:1.28198" />
+  <path
+     d="m 16.418297,145.67321 c -8.8,0 -15.99999997,7.2 -15.99999997,16 0,8.8 7.19999997,16 15.99999997,16 H 144.4183 c 8.8,0 16,-7.2 16,-16 0,-8.8 -7.2,-16 -16,-16 z"
+     id="path1540" />
+  <path
+     d="m 0.83660259,16.732027 c 0,-8.8000004 7.20000001,-16.00000041 15.99999941,-16.00000041 H 496.8366 c 8.8,0 16,7.20000001 16,16.00000041 0,8.800004 -7.2,16.000004 -16,16.000004 H 16.836602 c -8.7999994,0 -15.99999941,-7.2 -15.99999941,-16.000004 z"
+     id="path1613" />
+</svg>

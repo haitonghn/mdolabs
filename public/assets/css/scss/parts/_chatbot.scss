@@ -1,0 +1,33 @@
+.#{$prefix}baloon-a {
+    background: #2D99DB;
+    color: #fff;
+    padding: 8px 10px;
+    margin-left: 64px;
+    margin-bottom: 12px;
+    border-radius: 12px 12px 0 12px;
+    float: right;
+    clear: both;
+}
+
+.#{$prefix}baloon-b {
+    background: var($--color-app-hover);
+    padding: 8px 10px;
+    margin-right: 64px;
+    margin-bottom: 12px;
+    border-radius: 12px 12px 012px 0;
+    float: left;
+    clear: both;
+}
+
+.#{$prefix}baloon-c {
+    margin-right: 64px;
+    margin-bottom: 12px;
+    border-radius: 12px 12px 012px 0;
+    float: left;
+    clear: both;
+}
+
+.#{$prefix}chat-history-entry {
+    border-radius: $border-radius;
+    padding: 6px 0;
+}

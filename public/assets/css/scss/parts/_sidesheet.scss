@@ -1,0 +1,14 @@
+.#{$prefix}sidesheet {
+    background: var($--color-app-canvas);
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    &.#{$prefix}sidesheet-elevated {
+        z-index: 25;
+    }
+    &.#{$prefix}inverted {
+        background: var($--color-app-accent) !important;
+    }
+}

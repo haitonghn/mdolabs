@@ -1,0 +1,222 @@
+.#{$prefix}field {
+    clear: both;
+    margin-bottom: $padding-size;
+    position: relative;
+    .#{$prefix}field-label {
+        display: inline-block;
+        font-size: .9rem;
+        font-weight: 520;
+        margin-bottom: $padding-size/2;
+        position: relative;
+        &.#{$prefix}required {
+            &::after {
+                display: block;
+                font-weight: normal;
+                margin-left: 3px;
+                position: absolute;
+                content: '*';
+                font-size: 1.2rem;
+                color: var($--color-status-error);
+                left: 100%;
+                top: 0;
+            }
+        }
+        a {
+            color: var($--color-text-primary);
+        }
+    }
+    .#{$prefix}field-input {
+        background: var($--color-app-accent);
+        border: 1px solid Var($--color-app-border);
+        border-radius: $border-radius;
+        min-height: 32px;
+        padding: 0 $padding-size/2;
+        input, textarea {
+            color: var($--color-text-primary);
+            margin: 1px 0; 
+            background: none;
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+        input {
+            height: 32px;
+            line-height: 32px;
+        }
+        textarea {
+            line-height: 25px;
+            resize: none;
+        }
+        &.#{$prefix}inverted {
+            background: var($--color-app-canvas);
+        }
+    }
+    .#{$prefix}field-hint {
+        color: var($--color-text-secondary);
+        display: inline-block;
+        font-size: .8rem;
+        margin-top: $padding-size/2;
+    }
+    &.#{$prefix}field-has-control {
+        .#{$prefix}field-input {
+            position: relative;
+            padding-right: $touch-factor;
+            input {
+                padding-right: $padding-size/2;
+            }
+            .#{$prefix}button {
+                background: none;
+                border-radius: 0;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -$touch-factor/2;
+            }
+        }
+    }
+    &.#{$prefix}form-error {
+        .#{$prefix}field-hint {
+            color: #EB3B5B;
+        }
+        .#{$prefix}field-input {
+            border-bottom: 2px solid #EB3B5B !important;
+        }
+    }
+    &.#{$prefix}read-only {
+        margin-bottom: 0;
+        .#{$prefix}field-input {
+            background: transparent;
+            border: none;
+            padding: 0;
+            pointer-events: none;
+            > input,
+            > textarea {
+                margin: 0;
+                padding: 0;
+                height: initial;
+                line-height: initial;
+            }
+        }
+    }
+    &.#{$prefix}disabled {
+        opacity: 1;
+        .#{$prefix}field-input {
+            background: #ECECEC;
+            border-color: #ECECEC;
+            input, textarea, .#{$prefix}button {
+                color: var($--color-text-secondary);
+            }
+            .#{$prefix}button {
+                border-left-color: darken($color-app-accent, 9%);
+            }
+            .#{$prefix}chip-list {
+                .#{$prefix}chip {
+                    opacity: .7;
+                    i {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &.#{$prefix}flat {
+        margin-bottom: 0;
+    }
+    &.#{$prefix}condensed {
+        padding: 0;
+        margin: 0;
+        input {
+            margin: 0;
+        }
+    }
+    &.#{$prefix}pagination {
+        margin-bottom: 0;
+        width: 100px;
+        input {
+            text-align: center;
+        }
+    }
+    &.#{$prefix}enriched {
+        .#{$prefix}field-input {
+            position: relative;
+            &::before {
+                position: absolute;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                width: 3px;
+                content: '';
+                display: block;
+                background: #2D99DB;
+                left: -1px;
+                bottom: 0;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    }
+    &.#{$prefix}flow {
+        .#{$prefix}field-input {
+            position: relative;
+            &::before {
+                position: absolute;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                width: 3px;
+                content: '';
+                display: block;
+                background: var($--color-text-secondary);
+                left: -1px;
+                bottom: 0;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    }
+    &.#{$prefix}kai {
+        .#{$prefix}field-input {
+            position: relative;
+            &::before {
+                position: absolute;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                width: 3px;
+                content: '';
+                display: block;
+                background: linear-gradient(0deg, rgba(9,247,146,1) 0%, rgba(0,164,253,1) 100%);
+                left: -1px;
+                bottom: -1px;
+                top: -1px;
+                z-index: 1;
+            }
+        }
+    }
+
+    .#{$prefix}field-menu {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 2px;
+    }
+    &:hover {
+        .#{$prefix}field-menu {
+            display: block;
+        }
+    }
+}
+
+::-webkit-input-placeholder { 
+    color: var($--color-text-secondary);
+}
+::-moz-placeholder { 
+    color: var($--color-text-secondary);
+}
+:-ms-input-placeholder { 
+    color: var($--color-text-secondary);
+}
+:-moz-placeholder { 
+    color: var($--color-text-secondary);
+}
+::placeholder { 
+    color: var($--color-text-secondary);
+}

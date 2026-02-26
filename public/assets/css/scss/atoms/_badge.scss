@@ -1,0 +1,38 @@
+.#{$prefix}badge {
+    background-color: $color-series-1;
+    border-radius: 50px;
+    color: var($--color-text-inverted);
+    display: inline-block;
+    font-size: .6rem;
+    height: 16px;
+    line-height: 16px;
+    position: relative;
+    text-align: center;
+    min-width: 16px;
+    padding: 0 3px;
+    &.#{$prefix}filter-badge-large {
+        background-color: var($--color-app-theme);
+        font-weight: normal;
+    }
+    &.#{$prefix}inverted {
+        background-color: var($--color-app-canvas);
+        color: var($--color-app-theme);
+    }
+}
+
+.#{$prefix}filter-badge {
+    background-color: var($--color-app-theme);
+    border-radius: 100%;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+}
+
+.#{$prefix}filter-badge-inline {
+    background-color: var($--color-app-theme);
+    display: inline-block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+

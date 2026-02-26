@@ -1,0 +1,29 @@
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: $font-size;
+    color: var($--color-text-primary) !important;
+}
+
+$text-list: xxx-small xx-small x-small small normal large x-large xx-large xxx-large;
+$text-value: .6rem .7rem .8rem .9rem 1rem 1.2rem 1.4rem 1.6rem 1.8rem;
+
+@each $current-text in $text-list {
+    $t: index($text-list, $current-text);
+    
+    .#{$prefix}font-#{nth($text-list, $t)} { 
+        font-size: nth($text-value, $t) !important;
+    }
+}
+
+.#{$prefix}font-weight-medium {
+    font-weight: 600;
+}
+
+.#{$prefix}font-icon-image {
+    font-size: 6rem;
+}
+
+.#{$prefix}font-icon-tile {
+    font-size: 4rem;
+}

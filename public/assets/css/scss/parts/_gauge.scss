@@ -1,0 +1,61 @@
+.svg-item {
+  height: 90%;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.donut-ring {
+  stroke: var($--color-app-hover);
+}
+
+.donut-segment {
+  transform-origin: center;
+  stroke: $color-series-2;
+}
+
+.donut-segment-2 {
+  stroke: $color-series-4;
+}
+
+.donut-segment-3 {
+  stroke: $color-series-2;
+}
+
+.donut-segment-4 {
+  stroke: $color-series-1;
+}
+
+.segment-1{fill:#ccc;}
+.segment-2{fill:$color-series-4;}
+.segment-3{fill:$color-series-2;}
+.segment-4{fill:$color-series-1;}
+
+.donut-text {
+  font-family: Lato;
+  fill: $color-series-2;
+}
+.donut-text-1 {
+  fill: $color-series-4;
+}
+.donut-text-2 {
+  fill: $color-series-2;
+}
+.donut-text-3 {
+  fill: $color-series-1;
+}
+
+.donut-hole {
+  fill: none;
+}
+
+.donut-label {
+  font-size: 0.28em;
+  font-weight: 700;
+  line-height: 1;
+  fill: var($--color-text-primary);
+}
+
+.donut-percent {
+  font-size: 0.4em;
+  line-height: 1;
+}

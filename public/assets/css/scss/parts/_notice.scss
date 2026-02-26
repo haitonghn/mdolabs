@@ -1,0 +1,33 @@
+.#{$prefix}notice {
+    background: var($--color-app-canvas);
+    border-radius: $border-radius;
+    border: 1px solid var($--color-app-border);
+    color: var($--color-text-primary);
+    padding: $padding-size;
+    margin: 0 0 $padding-size 0;
+    &.#{$prefix}notice-warning {
+        background: var($--color-status-warning-accent);
+        border-color: var($--color-status-warning-accent); 
+        color: var($--color-status-warning);
+    }
+    &.#{$prefix}notice-error {
+        background: var($--color-status-error-accent);
+        border-color: var($--color-status-error-accent); 
+        color: var($--color-status-error);
+    }
+    &.#{$prefix}notice-success {
+        background: var($--color-status-success-accent);
+        border-color: var($--color-status-success-accent); 
+        color: var($--color-status-success);
+    }
+    &.#{$prefix}notice-info {
+        background: var($--color-status-info-accent);
+        border-color: var($--color-status-info-accent); 
+        color: var($--color-status-info);
+    }
+}
+
+.#{$prefix}system-error {
+    background: $color-series-2; 
+    color: var($--color-text-inverted);
+}

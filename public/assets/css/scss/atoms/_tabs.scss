@@ -1,0 +1,310 @@
+.#{$prefix}tabs {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    li {
+        color: var($--color-text-secondary);
+        cursor: pointer;
+        display: inline-block;
+        padding: $padding-size/2 $padding-size;
+        line-height: $line-height;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        user-select: none;
+        &.#{$prefix}condensed {
+            margin-left: $padding-size/2;
+        }
+        &.#{$prefix}selected {
+            color: var($--color-text-primary);
+            &::before {
+                background: var($--color-app-tab);
+                position: absolute;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 3px;
+                left: 0;
+                bottom: 0;
+                border-radius: 3px;
+            }
+        }
+    }
+    &.#{$prefix}condensed {
+        li {
+            padding: $padding-size/2 20px;
+        }
+    }
+}
+
+.#{$prefix}tabs-alt {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    li {
+        color: var($--color-text-secondary);
+        cursor: pointer;
+        display: inline-block;
+        padding: $padding-size/2 $padding-size;
+        padding-bottom: 10px;
+        line-height: $line-height;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        user-select: none;
+        &.#{$prefix}condensed {
+            margin-left: $padding-size/2;
+        }
+        &.#{$prefix}selected {
+            color: var($--color-text-primary);
+            &::before {
+                background: var($--color-app-tab);
+                position: absolute;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 3px;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+    &.#{$prefix}condensed {
+        li {
+            padding: $padding-size/2 20px;
+        }
+    }
+}
+
+.#{$prefix}tabs-alt3 {
+    border-radius: $border-radius;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    li {
+        background: var($--color-app-accent);
+        cursor: pointer;
+        display: inline-block;
+        min-width: $touch-factor;
+        height: $touch-factor;
+        line-height: $touch-factor;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        user-select: none;
+        border-radius: $border-radius;
+        text-align: center;
+        padding: 0 $padding-size;
+        color: var($--color-text-secondary);
+        &:hover {
+            background: var($--color-app-hover);
+            color: var($--color-text-primary);
+        }
+        &.#{$prefix}selected {
+            background: var($--color-app-canvas);
+            box-shadow: var($--box-shadow);
+            color: var($--color-text-primary);
+            z-index: 1;
+        }
+    }
+}
+
+.#{$prefix}tabs-alt4 {
+    border-radius: $border-radius;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    li {
+        cursor: pointer;
+        display: inline-block;
+        min-width: $touch-factor;
+        height: $touch-factor;
+        line-height: $touch-factor;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0 $padding-size;
+        position: relative;
+        user-select: none;
+        border-radius: $border-radius;
+        text-align: center;
+        color: var($--color-text-secondary);
+        &:hover {
+            
+            color: var($--color-text-primary);
+        }
+        &.#{$prefix}selected {
+            background: var($--color-app-accent);
+            color: var($--color-text-primary);
+            z-index: 1;
+        }
+    }
+}
+
+.#{$prefix}tabs-alt5 {
+    background: var($--color-app-accent);
+    border-radius: 50px;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    li {
+        background: var($--color-app-accent);
+        cursor: pointer;
+        display: inline-block;
+        min-width: $touch-factor;
+        height: $touch-factor;
+        line-height: $touch-factor;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        user-select: none;
+        border-radius: 50px;
+        text-align: center;
+        color: var($--color-text-secondary);
+        &:hover {
+            background: var($--color-app-hover);
+            color: var($--color-text-primary);
+        }
+        &.#{$prefix}selected {
+            background: var($--color-app-canvas);
+            box-shadow: var($--box-shadow);
+            color: var($--color-text-primary);
+            z-index: 1;
+        }
+        img {
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+
+.#{$prefix}tabs-alt6 {
+    background: var($--color-app-accent);
+    border-radius: 50px;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    li {
+        background: var($--color-app-accent);
+        cursor: pointer;
+        display: inline-block;
+        min-width: $touch-factor;
+        height: $touch-factor;
+        line-height: $touch-factor;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        user-select: none;
+        border-radius: 50px;
+        text-align: center;
+        color: var($--color-text-secondary);
+        padding: 0 $padding-size;
+        &:hover {
+            background: var($--color-app-hover);
+            color: var($--color-text-primary);
+        }
+        &.#{$prefix}selected {
+            background: var($--color-app-canvas);
+            box-shadow: var($--box-shadow);
+            color: var($--color-text-primary);
+            z-index: 1;
+        }
+        img {
+            position: relative;
+            top: 2px;
+        }
+    }
+    &.#{$prefix}compact {
+        li {
+            padding: 0;
+            width: $touch-factor;
+        }
+    }
+}
+
+.#{$prefix}tabs-alt7 {
+    border-radius: $border-radius;
+    background: var($--color-app-accent);
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    li {
+        cursor: pointer;
+        display: inline-block;
+        min-width: $touch-factor;
+        height: $touch-factor;
+        line-height: $touch-factor;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        user-select: none;
+        border-radius: $border-radius;
+        text-align: center;
+        padding: 0 $padding-size;
+        color: var($--color-text-secondary);
+        &:hover {
+            background: var($--color-app-hover);
+            color: var($--color-text-primary);
+        }
+        &.#{$prefix}selected {
+            background: var($--color-app-canvas);
+            box-shadow: var($--box-shadow);
+            color: var($--color-text-primary);
+            z-index: 1;
+        }
+    }
+}
+
+.#{$prefix}tab-content {
+    display: none;
+    &.#{$prefix}selected {
+        display: block;
+    }
+}
+
+
+.cut-list {display:flex;}
+.cut-list__elem {white-space:nowrap;}
+.cut-list__dropdown {position: relative;}
+.cut-list__drop-toggle{cursor: pointer; user-select: none; margin-top:10px;}
+.cut-list__more {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	min-width: 150px;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+    background: var($--color-app-canvas);
+    box-shadow: var($--box-shadow);
+    border-radius: $border-radius;
+	z-index: 100;
+	display: none;
+}
+
+.cut-list__more li {
+    display: block;
+}
+
+.cut-list__more.is-top{
+	top: auto;
+	bottom: 100%;
+}
+
+.cut-list__more.is-left{
+	right: auto;
+	left: 0;
+}

@@ -1,0 +1,32 @@
+.#{$prefix}grid {
+    background-color: inherit;
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    >[class^="#{$prefix}col-"] {
+        background-color: inherit;
+        position: relative;
+    }
+
+    @for $i from 1 through 12 {
+        >.#{$prefix}col-#{$i} { 
+            display: block;
+            width: 100%;
+        }
+    }
+
+    @include respond-to('small') {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        >[class^="#{$prefix}col-"] {
+            min-width: 0;
+        }
+        @for $i from 1 through 12 {
+            >.#{$prefix}col-#{$i} { 
+                flex: #{$i}; 
+            }
+        }
+    }
+}

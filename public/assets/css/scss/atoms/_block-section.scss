@@ -1,0 +1,112 @@
+.#{$prefix}block-section {
+    font-size: .75rem;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    line-height: $line-height;
+    color: var($--color-text-primary);
+    position: relative;
+    padding: $padding-size/4 0;
+    margin: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    > .#{$prefix}context-add {
+        display: block;
+        cursor: pointer;
+        background: var($--color-app-canvas);
+        border: 3px solid var($--color-app-canvas);
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+        right: 0;
+        color: var($--color-text-secondary);
+        width: 17px;
+        height: 19px;
+        z-index: 1;
+        > i {
+            position: absolute;
+            font-size: 1rem;
+            left: 0;
+            top: 0;
+        }
+    }
+    > .#{$prefix}collapsible {
+        display: block;
+        cursor: pointer;
+        background: var($--color-app-canvas);
+        border: 3px solid var($--color-app-canvas);
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+        left: 0;
+        color: var($--color-text-secondary);
+        width: 17px;
+        height: 19px;
+        z-index: 1;
+        > i {
+            position: absolute;
+            font-size: 1rem;
+            left: 0;
+            top: 0;
+        }
+    }
+    &:before,
+    &:after {
+        background-color: var($--color-app-border);
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+        margin-top: -2px;
+    }
+    &:before {
+        right: 0.8em;
+        margin-left: -50%;
+    }
+    &:after {
+        left: 0.8em;
+        margin-right: -50%;
+    }
+    &.#{$prefix}new-content {
+        &:before,
+        &:after {
+            background-color: var($--color-status-error);
+        }
+    }
+    > .#{$prefix}badge.#{$prefix}new {
+        border-radius: 20px;
+        border: 3px solid var($--color-app-canvas);
+        padding: 3px 6px;
+        background: var($--color-status-error);
+        line-height: initial;
+        font-size: .5rem;
+        color: var($--color-text-inverted);
+        width: auto;
+    }
+    &.#{$prefix}category {
+        background: none !important;
+        margin: 0;
+        padding: $padding-size/4 0;
+        font-size: 1rem;
+        text-align: left;
+        padding-left: $padding-size; 
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+    &.#{$prefix}solid {
+        background: var($--color-app-hover);
+        margin: 0;
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
+
+
+

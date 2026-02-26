@@ -1,0 +1,31 @@
+.#{$prefix}breadcrumbs {
+    display: flex;
+    line-height: $line-height;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        padding: $padding-size/2 0 $padding-size/2 0;
+        margin-bottom: $padding-size/2;
+        cursor: pointer;
+        +li:before  {
+            color: var($--color-text-primary);
+            content: "\/";
+            margin: 0 3px;
+        }
+        &:hover span {
+            text-decoration: underline;
+        }
+        &:last-child {
+            color: var($--color-text-secondary);
+            cursor: default;
+            &:hover span {
+                text-decoration: none;
+            }
+        }
+    }
+}
+  
+.#{$prefix}breadcrumb-content {
+    display: none;
+}

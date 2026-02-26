@@ -1,0 +1,168 @@
+.#{$prefix}avatar {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: var($--color-app-border);
+    border: 1px solid var($--color-app-border);
+    border-radius: 50%;
+    color: var($--color-text-primary);
+    cursor: pointer;
+    line-height: 22px;
+    text-align: center;
+    font-size: .65rem;
+    overflow: hidden;
+    img {
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+    }
+    &.#{$prefix}square {
+        border-radius: $border-radius !important;
+        img {
+            border-radius: $border-radius !important;
+        }
+    }
+    &.#{$prefix}shared {
+        overflow: visible;
+        &::before {
+            background-color: var($--color-app-canvas);
+            border-radius: 50%;
+            content: "\f064";
+            font-family: "Font Awesome 6 Pro";
+            font-size: 7px;
+            line-height: 12px;
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            text-align: center;
+            right: -2px;
+            top: -2px;
+        }
+    }
+    &.#{$prefix}online {
+        overflow: visible;
+        &::before {
+            content: '';
+            border: 1px solid var($--color-app-canvas);
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            bottom: -1px;
+            left: 1px;
+            background: var($--color-status-success);
+            z-index: 1;
+        }
+    }
+    &.#{$prefix}update {
+        overflow: visible;
+        &::after {
+            background: var($--color-status-error);
+            border: 1px solid var($--color-app-canvas);
+            position: absolute;
+            height: 14px;
+            width: 14px;
+            line-height: 14px;
+            border-radius: 50%;
+            top: -6px;
+            right: -6px;
+            font-weight: bold;
+            z-index: 1;
+            color: var($--color-app-canvas);
+            content: attr(data-update);
+            font-size: .6rem;
+            text-align: center;
+        }
+    }
+    &.#{$prefix}empty {
+        background: inherit !important;
+        border-color: var($--color-app-border);
+    }
+    &.#{$prefix}flex {
+        border-radius: 50px;
+        padding-left: 10px;
+        text-align: left;
+        width: 100%;
+    }
+    &.#{$prefix}borderless {
+        border-color: transparent; 
+    }
+    &.#{$prefix}grouped {
+        border-color: var($--color-app-canvas);
+        margin-left: -6px;
+        float: left;
+        line-height: $touch-factor - 2;
+    }
+    &.#{$prefix}medium {
+        width: 64px;
+        height: 64px;
+        line-height: 64px;
+        font-size: 2.4rem;
+    }
+    &.#{$prefix}small {
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        font-size: .8rem;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+        &.#{$prefix}grouped {
+            margin-left: 0;
+        }
+    }
+    &.#{$prefix}large {
+        display: block;
+        width: 140px;
+        height: 140px;
+        line-height: 140px;
+        font-size: 4.2rem;
+        overflow: visible;
+        img {
+            border-radius: 0;
+            width: 48px;
+            height: auto;
+        }
+        &.#{$prefix}avatar-control::after {
+            font-family: "mdo";
+            content: "\e90c";
+            color: var($--color-text-primary);
+            text-align: center;
+            font-size: .7rem;
+            line-height: 26px; 
+            box-shadow: var($--box-shadow);
+            display: block;
+            background: var($--color-app-canvas);
+            border-radius: 50%;
+            position: absolute;
+            height: 24px;
+            width: 24px;
+            bottom: 7px;
+            right: 7px;
+            z-index: 1;
+        }
+    }
+    &.#{$prefix}avatar-group {
+        border-radius: 3px;
+        .#{$prefix}grid {
+            font-size: .6rem;
+            height: $touch-factor;
+            line-height: 0;
+            >[class^="#{$prefix}col-"] {
+                height: $touch-factor;
+                p {
+                    height: 17px;
+                    line-height: 17px;
+                    padding: 0;
+                    margin: 0;
+                    &:only-child {
+                        height: $touch-factor;
+                        line-height: $touch-factor;
+                    }
+                }
+            }
+        }
+    }
+}

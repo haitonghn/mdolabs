@@ -1,0 +1,354 @@
+.#{$prefix}segment {
+  background: var($--color-app-accent);
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  border-radius: 50px;
+  box-sizing: border-box;
+  user-select: none;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-tap-highlight-color: transparent;
+  width: 200px;
+}
+.#{$prefix}segment > input {
+  position: absolute;
+  left: -10000px;
+  opacity: 0;
+}
+.#{$prefix}segment > input[type='checkbox'] ~ label {
+  transition-duration: 0;
+}
+.#{$prefix}segment > input[type='checkbox'] ~ label:before {
+  opacity: 0;
+}
+.#{$prefix}segment > input:disabled:nth-child(1) ~ label:nth-of-type(1) {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:nth-of-type(1):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:nth-of-type(1):before {
+  opacity: 1;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1):before, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1) ~ label:after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(1) ~ label:before {
+  left: 0%;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2):before, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:before {
+  left: 0%;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3):before, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:before {
+  left: 0%;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(4):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(4):before, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:before {
+  left: 0%;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(5):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(5):before, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:before {
+  left: 0%;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(6):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(6):before, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+  left: 0%;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(7):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(7):before, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:before {
+  left: 0%;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(8):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(8):before, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:before {
+  left: 0%;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(9):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(9):before, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:before {
+  left: 0%;
+}
+.#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > input:nth-child(1):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:before {
+  left: 0%;
+}
+.#{$prefix}segment > input:disabled:nth-child(2) ~ label:nth-of-type(2) {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.#{$prefix}segment > input:nth-child(2):checked ~ label:nth-of-type(2):after, .#{$prefix}segment > input:nth-child(2):checked ~ label:nth-of-type(2):before {
+  opacity: 1;
+}
+.#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2):after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2):before, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(2) ~ label:before {
+  left: 50%;
+}
+.#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3):after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3):before, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:before {
+  left: 33.33333%;
+}
+.#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(4):after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(4):before, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:before {
+  left: 25%;
+}
+.#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(5):after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(5):before, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:before {
+  left: 20%;
+}
+.#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(6):after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(6):before, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+  left: 16.66667%;
+}
+.#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(7):after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(7):before, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:before {
+  left: 14.28571%;
+}
+.#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(8):after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(8):before, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:before {
+  left: 12.5%;
+}
+.#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(9):after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(9):before, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:before {
+  left: 11.11111%;
+}
+.#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > input:nth-child(2):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:before {
+  left: 10%;
+}
+.#{$prefix}segment > input:disabled:nth-child(3) ~ label:nth-of-type(3) {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.#{$prefix}segment > input:nth-child(3):checked ~ label:nth-of-type(3):after, .#{$prefix}segment > input:nth-child(3):checked ~ label:nth-of-type(3):before {
+  opacity: 1;
+}
+.#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3):after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3):before, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(3) ~ label:before {
+  left: 66.66667%;
+}
+.#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(4):after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(4):before, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:before {
+  left: 50%;
+}
+.#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(5):after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(5):before, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:before {
+  left: 40%;
+}
+.#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(6):after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(6):before, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+  left: 33.33333%;
+}
+.#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(7):after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(7):before, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:before {
+  left: 28.57143%;
+}
+.#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(8):after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(8):before, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:before {
+  left: 25%;
+}
+.#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(9):after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(9):before, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:before {
+  left: 22.22222%;
+}
+.#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > input:nth-child(3):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:before {
+  left: 20%;
+}
+.#{$prefix}segment > input:disabled:nth-child(4) ~ label:nth-of-type(4) {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.#{$prefix}segment > input:nth-child(4):checked ~ label:nth-of-type(4):after, .#{$prefix}segment > input:nth-child(4):checked ~ label:nth-of-type(4):before {
+  opacity: 1;
+}
+.#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(4):after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(4):before, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(4) ~ label:before {
+  left: 75%;
+}
+.#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(5):after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(5):before, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:before {
+  left: 60%;
+}
+.#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(6):after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(6):before, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+  left: 50%;
+}
+.#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(7):after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(7):before, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:before {
+  left: 42.85714%;
+}
+.#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(8):after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(8):before, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:before {
+  left: 37.5%;
+}
+.#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(9):after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(9):before, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:before {
+  left: 33.33333%;
+}
+.#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > input:nth-child(4):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:before {
+  left: 30%;
+}
+.#{$prefix}segment > input:disabled:nth-child(5) ~ label:nth-of-type(5) {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.#{$prefix}segment > input:nth-child(5):checked ~ label:nth-of-type(5):after, .#{$prefix}segment > input:nth-child(5):checked ~ label:nth-of-type(5):before {
+  opacity: 1;
+}
+.#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(5):after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(5):before, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(5) ~ label:before {
+  left: 80%;
+}
+.#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(6):after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(6):before, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+  left: 66.66667%;
+}
+.#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(7):after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(7):before, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:before {
+  left: 57.14286%;
+}
+.#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(8):after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(8):before, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:before {
+  left: 50%;
+}
+.#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(9):after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(9):before, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:before {
+  left: 44.44444%;
+}
+.#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > input:nth-child(5):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:before {
+  left: 40%;
+}
+.#{$prefix}segment > input:disabled:nth-child(6) ~ label:nth-of-type(6) {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.#{$prefix}segment > input:nth-child(6):checked ~ label:nth-of-type(6):after, .#{$prefix}segment > input:nth-child(6):checked ~ label:nth-of-type(6):before {
+  opacity: 1;
+}
+.#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(6):after, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(6):before, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:after, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(6) ~ label:before {
+  left: 83.33333%;
+}
+.#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(7):after, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(7):before, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:after, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:before {
+  left: 71.42857%;
+}
+.#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(8):after, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(8):before, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:after, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:before {
+  left: 62.5%;
+}
+.#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(9):after, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(9):before, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:after, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:before {
+  left: 55.55556%;
+}
+.#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > input:nth-child(6):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:before {
+  left: 50%;
+}
+.#{$prefix}segment > input:disabled:nth-child(7) ~ label:nth-of-type(7) {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.#{$prefix}segment > input:nth-child(7):checked ~ label:nth-of-type(7):after, .#{$prefix}segment > input:nth-child(7):checked ~ label:nth-of-type(7):before {
+  opacity: 1;
+}
+.#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(7):after, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(7):before, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:after, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(7) ~ label:before {
+  left: 85.71429%;
+}
+.#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(8):after, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(8):before, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:after, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:before {
+  left: 75%;
+}
+.#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(9):after, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(9):before, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:after, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:before {
+  left: 66.66667%;
+}
+.#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > input:nth-child(7):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:before {
+  left: 60%;
+}
+.#{$prefix}segment > input:disabled:nth-child(8) ~ label:nth-of-type(8) {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.#{$prefix}segment > input:nth-child(8):checked ~ label:nth-of-type(8):after, .#{$prefix}segment > input:nth-child(8):checked ~ label:nth-of-type(8):before {
+  opacity: 1;
+}
+.#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(8):after, .#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(8):before, .#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:after, .#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(8) ~ label:before {
+  left: 87.5%;
+}
+.#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(9):after, .#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(9):before, .#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:after, .#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:before {
+  left: 77.77778%;
+}
+.#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > input:nth-child(8):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:before {
+  left: 70%;
+}
+.#{$prefix}segment > input:disabled:nth-child(9) ~ label:nth-of-type(9) {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.#{$prefix}segment > input:nth-child(9):checked ~ label:nth-of-type(9):after, .#{$prefix}segment > input:nth-child(9):checked ~ label:nth-of-type(9):before {
+  opacity: 1;
+}
+.#{$prefix}segment > input:nth-child(9):checked ~ label:first-of-type:nth-last-of-type(9):after, .#{$prefix}segment > input:nth-child(9):checked ~ label:first-of-type:nth-last-of-type(9):before, .#{$prefix}segment > input:nth-child(9):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:after, .#{$prefix}segment > input:nth-child(9):checked ~ label:first-of-type:nth-last-of-type(9) ~ label:before {
+  left: 88.88889%;
+}
+.#{$prefix}segment > input:nth-child(9):checked ~ label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > input:nth-child(9):checked ~ label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > input:nth-child(9):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > input:nth-child(9):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:before {
+  left: 80%;
+}
+.#{$prefix}segment > input:disabled:nth-child(10) ~ label:nth-of-type(10) {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.#{$prefix}segment > input:nth-child(10):checked ~ label:nth-of-type(10):after, .#{$prefix}segment > input:nth-child(10):checked ~ label:nth-of-type(10):before {
+  opacity: 1;
+}
+.#{$prefix}segment > input:nth-child(10):checked ~ label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > input:nth-child(10):checked ~ label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > input:nth-child(10):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > input:nth-child(10):checked ~ label:first-of-type:nth-last-of-type(10) ~ label:before {
+  left: 90%;
+}
+.#{$prefix}segment > label {
+  display: inline-block;
+  padding: 0 12px;
+  cursor: pointer;
+  float: left;
+  line-height: 34px;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+  transition-property: none;
+  transition-duration: inherit;
+  transition-timing-function: inherit;
+}
+.#{$prefix}segment > label:before, .#{$prefix}segment > label:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.#{$prefix}segment > label:after {
+  content: attr(data-value);
+  text-align: center;
+  padding: inherit;
+  z-index: 1;
+  font-style: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+  opacity: 0;
+  transition-property: opacity, left;
+  transition-duration: inherit;
+  transition-timing-function: inherit;
+}
+.#{$prefix}segment > label:after, .#{$prefix}segment > label {
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.#{$prefix}segment > label:before {
+  content: '';
+  color: inherit;
+  background: var($--color-app-canvas);
+  box-shadow: var($--box-shadow);
+  border-radius: 50px;
+  transition-property: left;
+  transition-duration: inherit;
+  transition-timing-function: inherit;
+}
+.#{$prefix}segment > label:first-of-type:nth-last-of-type(1), .#{$prefix}segment > label:first-of-type:nth-last-of-type(1):after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(1):before, .#{$prefix}segment > label:first-of-type:nth-last-of-type(1) ~ label, .#{$prefix}segment > label:first-of-type:nth-last-of-type(1) ~ label:after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(1) ~ label:before {
+  width: 100%;
+}
+.#{$prefix}segment > label:first-of-type:nth-last-of-type(2), .#{$prefix}segment > label:first-of-type:nth-last-of-type(2):after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(2):before, .#{$prefix}segment > label:first-of-type:nth-last-of-type(2) ~ label, .#{$prefix}segment > label:first-of-type:nth-last-of-type(2) ~ label:after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(2) ~ label:before {
+  width: 50%;
+}
+.#{$prefix}segment > label:first-of-type:nth-last-of-type(3), .#{$prefix}segment > label:first-of-type:nth-last-of-type(3):after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(3):before, .#{$prefix}segment > label:first-of-type:nth-last-of-type(3) ~ label, .#{$prefix}segment > label:first-of-type:nth-last-of-type(3) ~ label:after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(3) ~ label:before {
+  width: 33.33333%;
+}
+.#{$prefix}segment > label:first-of-type:nth-last-of-type(4), .#{$prefix}segment > label:first-of-type:nth-last-of-type(4):after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(4):before, .#{$prefix}segment > label:first-of-type:nth-last-of-type(4) ~ label, .#{$prefix}segment > label:first-of-type:nth-last-of-type(4) ~ label:after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(4) ~ label:before {
+  width: 25%;
+}
+.#{$prefix}segment > label:first-of-type:nth-last-of-type(5), .#{$prefix}segment > label:first-of-type:nth-last-of-type(5):after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(5):before, .#{$prefix}segment > label:first-of-type:nth-last-of-type(5) ~ label, .#{$prefix}segment > label:first-of-type:nth-last-of-type(5) ~ label:after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(5) ~ label:before {
+  width: 20%;
+}
+.#{$prefix}segment > label:first-of-type:nth-last-of-type(6), .#{$prefix}segment > label:first-of-type:nth-last-of-type(6):after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(6):before, .#{$prefix}segment > label:first-of-type:nth-last-of-type(6) ~ label, .#{$prefix}segment > label:first-of-type:nth-last-of-type(6) ~ label:after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(6) ~ label:before {
+  width: 16.66667%;
+}
+.#{$prefix}segment > label:first-of-type:nth-last-of-type(7), .#{$prefix}segment > label:first-of-type:nth-last-of-type(7):after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(7):before, .#{$prefix}segment > label:first-of-type:nth-last-of-type(7) ~ label, .#{$prefix}segment > label:first-of-type:nth-last-of-type(7) ~ label:after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(7) ~ label:before {
+  width: 14.28571%;
+}
+.#{$prefix}segment > label:first-of-type:nth-last-of-type(8), .#{$prefix}segment > label:first-of-type:nth-last-of-type(8):after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(8):before, .#{$prefix}segment > label:first-of-type:nth-last-of-type(8) ~ label, .#{$prefix}segment > label:first-of-type:nth-last-of-type(8) ~ label:after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(8) ~ label:before {
+  width: 12.5%;
+}
+.#{$prefix}segment > label:first-of-type:nth-last-of-type(9), .#{$prefix}segment > label:first-of-type:nth-last-of-type(9):after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(9):before, .#{$prefix}segment > label:first-of-type:nth-last-of-type(9) ~ label, .#{$prefix}segment > label:first-of-type:nth-last-of-type(9) ~ label:after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(9) ~ label:before {
+  width: 11.11111%;
+}
+.#{$prefix}segment > label:first-of-type:nth-last-of-type(10), .#{$prefix}segment > label:first-of-type:nth-last-of-type(10):after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(10):before, .#{$prefix}segment > label:first-of-type:nth-last-of-type(10) ~ label, .#{$prefix}segment > label:first-of-type:nth-last-of-type(10) ~ label:after, .#{$prefix}segment > label:first-of-type:nth-last-of-type(10) ~ label:before {
+  width: 10%;
+}
+.#{$prefix}segment.italic, .#{$prefix}segment .italic {
+  font-style: italic;
+}
+.#{$prefix}segment.bold, .#{$prefix}segment .bold {
+  font-weight: bold;
+}
+.#{$prefix}segment.underline, .#{$prefix}segment .underline {
+  text-decoration: underline;
+}
+.#{$prefix}segment.line-through, .#{$prefix}segment .line-through {
+  text-decoration: line-through;
+}

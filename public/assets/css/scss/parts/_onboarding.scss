@@ -1,0 +1,46 @@
+.#{$prefix}onboarding {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: block;
+    > li {
+        padding-left: 54px;
+        display: block;
+        position: relative;
+        &::before {
+            content: attr(data-number);
+            background: var($--color-app-canvas);
+            position: absolute;
+            left: 0;
+            border-radius: 50%;
+            border: 1px solid var($--color-app-border);
+            height: $touch-factor;
+            width: $touch-factor;
+            top: 12px;
+            text-align: center;
+            line-height: $touch-factor;
+            z-index: 1;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background: var($--color-app-border); 
+            top: 50%;
+            left: 18px;
+            width: 1px;
+            height: 100%;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &.#{$prefix}custom {
+        > li {
+            &::before {
+                font-family: "mdo";
+            }
+        }
+    }
+}

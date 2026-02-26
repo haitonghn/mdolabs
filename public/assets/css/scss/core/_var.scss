@@ -1,0 +1,37 @@
+@import 'theme';
+@import 'mixin';
+
+// Common attributes
+$prefix: mdo- !default;
+$font-size: 14px !default;
+$border-radius: 3px !default;
+$padding-size: 12px !default;
+$touch-factor: 36px !default;
+$line-height: 24px !default;
+$signal-size: 36px !default;
+$chip-height: 32px !default;
+
+:root {
+    @include spread-map($theme-map-light);
+}
+:root.dark {
+    @include spread-map($theme-map-dark);
+}
+
+// Series color
+$color-series-1: #EB3B5B;
+$color-series-2: #FB8230;
+$color-series-3: #F8B732;
+$color-series-4: #20BF6C;
+$color-series-5: #10B9B2;
+$color-series-6: #2D99DB;
+$color-series-7: #3966D6;
+$color-series-8: #8854D1;
+$color-series-9: #A6B1C2;
+$color-series-10: #4A6583;
+
+// Obsolete
+$color-app-theme: #2F4058 !default;
+$color-app-border: #D9E3EF !default;
+$color-app-accent: #F8FBFD !default;
+$color-status-error: #B52318 !default;

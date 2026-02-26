@@ -1,0 +1,641 @@
+.#{$prefix}table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    tr td {
+        background: var($--color-app-canvas);
+        padding: 0 $padding-size/2;
+    }
+    &.#{$prefix}table-accent {
+        tr th,
+        tr td {
+            background: var($--color-app-accent);
+        }
+    }
+    &.#{$prefix}striped {
+        tr:nth-child(odd) td {
+            background: var($--color-app-accent);
+        }
+    }
+    &.#{$prefix}single-column {
+        width: 200px;
+    }
+    
+    &.#{$prefix}module {
+
+        &.#{$prefix}excel tr td {
+            border-left: 1px solid var($--color-app-border);
+            &:first-child {
+                border-left: none;
+            }
+            &.#{$prefix}cell-fixed {
+                /*background: var($--color-app-accent);*/
+                border-left: none;
+            }
+        }
+
+        &.#{$prefix}hover {
+            tr:hover {
+                td {
+                    background: var($--color-app-hover);
+                    .#{$prefix}button {
+                        background: none;
+                    }
+                    .#{$prefix}button.#{$prefix}minor {
+                        background: var($--color-app-border);
+                    }
+                }
+            }
+
+            tr.#{$prefix}no-hover,
+            tr.#{$prefix}inline-add {
+                &:hover {
+                    td {
+                        background: none;
+                    }
+                }
+                
+            }
+        }
+
+        th {
+            border-bottom: 1px solid var($--color-app-border);
+            font-size: .9rem;
+        }
+     
+        tr td {
+            border-bottom: 1px solid var($--color-app-border);
+            position: relative;
+            pointer-events: all !important;
+            overflow: hidden;
+
+            &.#{$prefix}no-border {
+                border: transparent;
+            }
+
+            &.#{$prefix}cell-accent {
+                background: var($--color-app-accent);
+            }
+
+            input {
+                color: var($--color-text-primary);
+                background: none;
+                border: none;
+                outline: none;
+                width: 100%;
+            }
+            .#{$prefix}field,
+            .nice-select,
+            .#{$prefix}filter-pill {
+                margin-bottom: 0;
+                float: left;
+            }
+            &.#{$prefix}cell-error {
+                background-color: var($--color-status-error-accent) !important;
+                /*border-bottom-color: $color-series-1 !important; 
+                color: $color-series-1 !important;
+                position: relative;
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    background: $color-series-1;
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    bottom: -1px;
+                    left: 0;
+                }*/
+            }
+            &.#{$prefix}cell-warning {
+                background-color: var($--color-status-warning-accent) !important;
+                /*border-bottom-color: $color-series-2 !important;
+                position: relative;
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    background: $color-series-2;
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    bottom: -1px;
+                    left: 0;
+                }*/
+            }
+            &.#{$prefix}cell-success {
+                border-bottom-color: $color-series-4 !important;
+                position: relative;
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    background: $color-series-4;
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    bottom: -1px;
+                    left: 0;
+                }
+            }
+            &.#{$prefix}cell-info {
+                border-bottom-color: $color-series-6 !important; 
+                position: relative;
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    background: $color-series-6;
+                    position: absolute;
+                    height: 3px;
+                    width: 100%;
+                    bottom: -1px;
+                    left: 0;
+                }
+            }
+            &.#{$prefix}cell-warning-alt {
+                background: var($--color-status-warning-accent) !important;
+                color: var($--color-status-warning) !important;
+            }
+            &.#{$prefix}cell-success-alt {
+                background: var($--color-status-success-accent) !important;
+                color: var($--color-status-success) !important;
+            }
+            &.#{$prefix}cell-info-alt {
+                background: var($--color-status-info-accent) !important;
+                color: var($--color-status-info) !important;
+            }
+            &.#{$prefix}cell-error-alt {
+                background: var($--color-status-error-accent) !important;
+                color: var($--color-status-error) !important;
+            }
+        }
+        tr {
+            
+            &.#{$prefix}selected {
+                td {
+                    background-color: var($--color-app-hover) !important;
+                    /*.#{$prefix}button {
+                        background: none;
+                    }*/
+                }
+                
+            }
+            &.#{$prefix}read  {
+                td {
+                    /*background: var($--color-app-accent);*/
+                }
+            }
+
+            td.#{$prefix}clean {
+                background: none !important;
+            }
+            /*&:nth-child(odd) td {
+                background: #F9F9F9;
+            }*/
+            &.#{$prefix}row-accent {
+                td {
+                    background: var($--color-app-accent);
+                }
+            }
+            &.#{$prefix}row-default {
+             
+                td:first-child {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 3px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: var($--color-app-theme);
+                        position: absolute;
+                    }
+                }
+            }
+            &.#{$prefix}row-error {
+             
+                td:first-child {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 3px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: $color-series-1;
+                        position: absolute;
+                        z-index: 1;
+                    }
+                }
+            }
+            &.#{$prefix}row-warning {
+             
+                td:first-child {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 3px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: $color-series-2;
+                        position: absolute;
+                    }
+                }
+            }
+            &.#{$prefix}row-success {
+               
+                td:first-child {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 3px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: $color-series-4;
+                        position: absolute;
+                    }
+                }
+            }
+            &.#{$prefix}row-info {
+              
+                td:first-child {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 3px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: $color-series-6;
+                        position: absolute;
+                        z-index: 1;
+                    }
+                }
+            }
+            &.#{$prefix}row-inactive {
+              
+                td:first-child {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        width: 3px;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: var($--color-app-border);
+                        position: absolute;
+                    }
+                }
+            }
+            &.#{$prefix}row-none {
+                /*border-left: 3px solid var($--color-app-canvas);*/
+            }
+            &.#{$prefix}unread  {
+                td:first-child {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        border-radius: 50%;
+                        width: 3px;
+                        height: 3px;
+                        top: 50%;
+                        left: 4px;
+                        margin-top: -2px;
+                        background: var($--color-app-theme);
+                        position: absolute;
+                    }
+                }
+            }
+        }
+        &.#{$prefix}condensed {
+            width: auto;
+        }
+        
+    }
+
+    .#{$prefix}table-multi-select {
+        background: var($--color-app-canvas);
+        background: linear-gradient(90deg,rgba(255, 255, 255, 1) 65%, rgba(237, 221, 83, 0) 100%);
+        display: none;
+        height: 36px; 
+        position: absolute; 
+        left: 0; 
+        top: 4px; 
+        width: 130px; 
+    }
+    
+    
+    &.#{$prefix}order {
+        tr {
+            td:first-child,
+            td:last-child {
+                padding-left: $padding-size;            
+                padding-right: $padding-size;
+            }
+            td.#{$prefix}avatar-cell {
+                width: 90px;
+            }
+            
+            &:hover {
+                td {
+                    background: var($--color-app-hover);
+                }
+            }
+        } 
+    }
+    @include respond-to('medium') {
+        &.#{$prefix}order {
+            tr {
+                td:first-child {
+                    padding-left: $padding-size*5;            
+                }
+                td:last-child {          
+                    padding-right: $padding-size*5;
+                }
+            } 
+        }
+        
+    }
+    tr.#{$prefix}expanded-row {
+        border-top: 2px solid var($--color-app-accent);
+        td {
+            background: var($--color-app-accent) !important;
+        }
+    }
+    thead th {
+        top: 0;
+        z-index: 1;
+        > span {
+            cursor: pointer;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-align: left;
+            /*i {
+                margin-right: 3px;
+            }*/
+        }
+    }
+    
+    th,
+    td {
+        line-height: 24px;
+        padding: $padding-size/2;
+        white-space: nowrap;
+        &.#{$prefix}fixed {
+            width: 1px;
+        }
+        &.#{$prefix}fixed-half {
+            width: 50% !important;
+        }
+        &.#{$prefix}fluid {
+            max-width: 0;
+        }
+        
+        &.#{$prefix}flow {
+            position: relative;
+            .#{$prefix}text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        &.#{$prefix}control {
+            padding: 0 $padding-size;
+        }
+        &.#{$prefix}title {
+            vertical-align: top;
+            padding-top: $padding-size;
+        }
+        .#{$prefix}badge {
+            margin-top: 8px;
+        }
+        &.#{$prefix}category-cell {
+            background: var($--color-app-canvas) !important;
+            border-bottom: none !important;
+        }
+        &.#{$prefix}category-cell-alt {
+            border-bottom-width: 3px !important;
+        }
+        &.#{$prefix}category-cell-alt2 {
+            border-left-width: 3px !important;
+        }
+        &.#{$prefix}cell-disabled {
+            background: #ECECEC !important;
+            color: #66717B !important;
+        }
+        &.#{$prefix}cell-droppable {
+            border-style: dashed !important;
+            border-color: var($--color-app-border) !important;
+        }
+    }
+    tr:nth-child(even) {
+        background: var($--color-app-canvas);
+    }
+    &.#{$prefix}fixed-4 {
+        thead tr th,
+        tbody tr td {
+           
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                position: sticky;
+                z-index: 1;
+                &.#{$prefix}small-col,
+                &.#{$prefix}medium-col  {
+                    > span {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: block;
+                    }
+                }
+                &.#{$prefix}small-col {
+                    > span {
+                        max-width: 16px;
+                        min-width: 16px;
+                        width: 16px;
+                    }
+                }
+                &.#{$prefix}medium-col {
+                    > span {
+                        max-width: 76px;
+                        min-width: 76px;
+                        width: 76px;
+                    }
+                }
+            }
+
+            &:nth-child(1)  {
+                left: 0;
+            }
+            &:nth-child(2)  {
+                left: 40px;
+            }
+            &:nth-child(3)  {
+                left: 80px;
+            }
+            &:nth-child(4)  {
+                left: 180px;
+            }
+        }
+    }
+    &.#{$prefix}condensed {
+        th, td {
+            line-height: 16px;
+        }
+    }
+    /*tr:hover {
+        td {
+            background-color: var($--color-app-hover) !important;
+        }
+    }*/
+    &.#{$prefix}flat {
+        th, td {
+            border-color: transparent !important;
+            line-height: initial;
+            padding-left: 0;
+            padding-right: 0;
+            vertical-align: top;
+        }
+    }
+    &.#{$prefix}flat-alt {
+        tr:last-child td {
+            border-color: transparent !important;
+        }
+    }
+    &.#{$prefix}flat-alt2 {
+        td {
+            border-right-color: transparent !important;
+        }
+    }
+    &.#{$prefix}no-border {
+        th, td {
+            border: none !important;
+        }
+    }
+    &.#{$prefix}fixed-table {
+        table-layout: fixed;
+        td {
+            border-left: none !important;
+        }
+        tr td:first-child {
+            background: var($--color-app-accent) !important;
+        }
+    }
+    &.#{$prefix}fixed-table-alt {
+        table-layout: fixed;
+        tr td:first-child {
+            background: var($--color-app-canvas) !important;
+        }
+    }
+    &.#{$prefix}fixed-table-alt2 {
+         td {
+            border-left: none !important;
+            background: var($--color-app-accent) !important;
+        }
+    }
+}
+
+.#{$prefix}table-card {
+    td {
+        padding: 6px 3px !important;
+        font-size: 12px;
+        line-height: 10px;
+    }
+}
+
+/* External plugin */
+
+.table-edit-cell {
+    border: none;
+    outline: none;
+    border-radius: $border-radius;
+    &:focus, &:active {outline: none;}
+    &:focus {
+        box-shadow: var($--box-shadow);
+    }
+}
+
+.#{$prefix}chat-entry {
+    .#{$prefix}table {
+        tr {
+            td:first-child {
+                border-left: 2px solid var($--color-text-secondary);
+            }
+        }
+    }
+    &:hover {
+        .#{$prefix}table {
+            td {
+                background: var($--color-app-canvas);
+            }
+            td, tr {
+                border-color: var($--color-app-hover);
+            }
+        }
+    }
+}
+
+.#{$prefix}product-table table,
+.#{$prefix}order-table table {
+    tr th[data-priority], 
+    tr td[data-priority] {
+        display: none;
+    }
+}
+
+.#{$prefix}product-table[min-width~="1400px"] table {
+    tr th[data-priority="4"], 
+    tr td[data-priority="4"] {
+        display: table-cell;
+    }
+}
+
+.#{$prefix}product-table[min-width~="1200px"] table {
+    tr th[data-priority="3"], 
+    tr td[data-priority="3"] {
+        display: table-cell;
+    }
+}
+
+.#{$prefix}product-table[min-width~="900px"] table {
+    tr th[data-priority="2"], 
+    tr td[data-priority="2"] {
+        display: table-cell;
+    }
+}
+
+.#{$prefix}order-table table {
+    tr:hover td {
+        .#{$prefix}signal {
+            &.#{$prefix}signal-new {
+                &::before {
+                    border-color: var($--color-app-hover);
+                }
+            }
+        }
+    }
+}
+
+.#{$prefix}order-table[min-width~="1400px"] table {
+    tr th[data-priority="4"], 
+    tr td[data-priority="4"] {
+        display: table-cell;
+    }
+}
+
+.#{$prefix}order-table[min-width~="1200px"] table {
+    tr th[data-priority="3"], 
+    tr td[data-priority="3"] {
+        display: table-cell;
+    }
+}
+
+.#{$prefix}item-pick {
+    position: relative;
+    z-index: 20;
+}

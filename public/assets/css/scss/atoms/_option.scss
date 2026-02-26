@@ -1,0 +1,97 @@
+.#{$prefix}option {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 28px;
+    text-align: left;
+    height: 24px;
+    label {
+      cursor: pointer;
+      line-height: 24px;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        border-radius: 50%;
+      }
+      &:before {
+        left: 3px;
+        width: 16px;
+        height: 16px;
+        margin: -10px 0 0;
+        background: var($--color-app-canvas);
+        border: 1px solid var($--color-app-border);
+      }
+      &:after {
+        content: "\e955";
+        font-family: "mdo";
+        font-size: 8px;
+        line-height: 16px;
+        color: var($--color-text-inverted);
+        width: 16px;
+        height: 16px;
+        left: 4px;
+        top: 3px;
+        display: none;
+        background: var($--color-app-theme);
+        border-color: var($--color-app-theme);
+        text-align: center;
+      }
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+      position: absolute;
+      top: 0;
+      left: -9999px;
+      visibility: hidden;
+      
+      &:checked + label {
+        &:before {
+          border-color: var($--color-app-theme);
+        }
+        &:after {
+          display: block;
+        }
+      }
+    }
+    &.#{$prefix}option-justified {
+      left: 50%;
+      margin-left: -18px;
+    }
+
+  }
+
+  .#{$prefix}no-control {
+    label {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+
+  }
+  
+  .#{$prefix}option-square {
+    label {
+      &:before {
+        border-radius: $border-radius;
+      }
+    
+      &:after {
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .#{$prefix}sort {  
+    label {
+      &:after {
+        font-family: "mdo";
+        content: "\e9a6";
+        text-align: center;
+        background: none;
+        padding-top: 3px;
+      }
+    }
+  }

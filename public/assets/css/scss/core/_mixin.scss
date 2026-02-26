@@ -1,0 +1,12 @@
+@mixin spread-map($map: ()) {
+    @each $key, $value in $map {
+        #{$key}: $value;
+    }
+}
+
+@function darkenColor($color-variable) {
+    $color-variable-h: var(#{$color-variable + "-h"});
+    $color-variable-s: var(#{$color-variable + "-s"});
+    $color-variable-l: calc(var(#{$color-variable + "-l"}) - 5%);
+    @return hsl($color-variable-h, $color-variable-s, $color-variable-l);
+}

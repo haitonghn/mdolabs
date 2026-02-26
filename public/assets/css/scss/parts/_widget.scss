@@ -1,0 +1,125 @@
+.#{$prefix}widget {
+    background: inherit;
+    .#{$prefix}widget-title {
+        background: inherit;
+        padding: $padding-size/2 0 $padding-size/2 $padding-size*2;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+        .#{$prefix}widget-toolbar {
+            position: absolute;
+            height: 16px;
+            top: 50%;
+            margin-top: -6px;
+            right: -1px;
+            padding-right: 12px;
+        }
+        > span {
+            background: var($--color-app-canvas);
+            position: relative;
+            font-size: .75rem;
+            z-index: 1;
+            padding-left: $padding-size;
+            padding-right: $padding-size;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        a {
+            background: inherit;
+            position: relative;
+            z-index: 1;
+            top: -4px;
+            padding-right: $padding-size;
+            color: var($--color-text-secondary);
+        }
+        &::before {
+            position: absolute;
+            left: 1px;
+            top: 50%;
+            margin-top: -6px;
+            font-family: 'mdo';
+            width: 16px;
+            height: 16px;
+            content: '\e904';
+            color: var($--color-text-secondary);
+        }
+        &::after {
+            position: absolute;
+            left: $padding-size*2;
+            top: 50%;
+            right: 0;
+            height: 1px;
+            content: '';
+            border-bottom: 1px solid var($--color-app-border);
+        }
+        &.#{$prefix}accent-title {
+            > span {
+                background: var($--color-app-accent);
+            }
+        }
+    }
+    .#{$prefix}widget-content {
+        display: none;
+    }
+    &.#{$prefix}active {
+        .#{$prefix}widget-content {
+            display: block;
+        }
+        .#{$prefix}widget-title {
+            &::before {
+                content: '\e923';
+            }
+        }
+        
+    }
+}
+
+.#{$prefix}widget {
+    &.#{$prefix}compact {
+        .#{$prefix}widget-title {
+            padding: 0 $padding-size 0 $padding-size*3;
+            text-align: left;
+            line-height: $touch-factor;
+            > span { 
+                background: none !important;
+                color: var($--color-text-primary);
+                line-height: $touch-factor;
+                font-weight: bold;
+                padding: 0;
+            }
+            &::before {
+                top: 8px;
+                left: $padding-size;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.#{$prefix}widget {
+    &.#{$prefix}compact-alt {
+        border-radius: $border-radius;
+        border: 1px solid var($--color-app-border);
+        .#{$prefix}widget-title {
+            
+            padding: 0 $padding-size 0 $padding-size*3;
+            text-align: left;
+            line-height: $touch-factor;
+            > span { 
+                color: var($--color-text-primary);
+                line-height: $touch-factor;
+                font-weight: bold;
+                padding: 0;
+            }
+            &::before {
+                top: 8px;
+                left: $padding-size;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

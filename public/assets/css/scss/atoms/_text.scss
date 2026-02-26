@@ -1,0 +1,199 @@
+.#{$prefix}text {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 6px 0;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &.#{$prefix}wrap {
+        line-height: 1.2rem;
+        white-space: normal;
+    }
+    &.#{$prefix}wrap-alt {
+        line-height: initial;
+        white-space: normal;
+    }
+    &.#{$prefix}flat,
+    &.#{$prefix}flat-alt {
+        padding: 0;
+    }
+    &.#{$prefix}flat {
+        line-height: 20px;
+    }
+    &.#{$prefix}flat-alt {
+        line-height: initial;
+    }
+    &.#{$prefix}double-line {
+        line-height: initial;
+        padding-bottom: 3px;
+    }
+    &.#{$prefix}clear-line {
+        line-height: normal !important;
+    }
+    &.#{$prefix}more {
+        display: inline-block;
+        max-width: 100%;
+        padding-right: 24px;
+        position: relative;
+        width: auto;
+        &::after {
+            position: absolute;
+            font-family: 'mdo';
+            font-size: .6rem;
+            content: '\e904';
+            right: 6px;
+            top: 0;
+        }
+        &.#{$prefix}reveal {
+            &::after {
+                content: '\e923';
+            }
+        }
+    }
+}
+
+.#{$prefix}secondary-line {
+    font-weight: normal !important; 
+}
+
+.#{$prefix}text-center {
+    text-align: center !important;
+}
+
+.#{$prefix}text-right {
+    text-align: right !important;
+}
+
+.#{$prefix}text-left {
+    text-align: left !important;
+}
+
+.#{$prefix}text-justify {
+    text-align: justify !important;
+}
+
+.#{$prefix}text-primary {
+    color: var($--color-text-primary) !important;
+}
+
+.#{$prefix}text-search-hit {
+    background: #FFFBA8;
+    display: inline-block; 
+}
+
+.#{$prefix}text-inverted {
+    color: var($--color-text-inverted) !important;
+}
+
+.#{$prefix}text-secondary {
+    color: var($--color-text-secondary) !important;
+    &.#{$prefix}editable {
+        border-bottom-color: var($--color-text-secondary) !important;
+    }
+}
+
+.#{$prefix}text-unprocessed {
+    color: #9BA1A4 !important;
+}
+
+.#{$prefix}text-strike {
+    text-decoration: line-through;
+}
+
+.#{$prefix}text-disabled {
+    color: var($--color-text-disabled) !important;
+    &.#{$prefix}editable {
+        border-bottom-color: var($--color-text-disabled) !important;
+    }
+}
+
+.#{$prefix}text-link {
+    color: var($--color-text-link) !important;
+}
+
+.#{$prefix}text-highlight {
+    color: #0086F0 !important;
+}
+
+.#{$prefix}text-error {
+    color: $color-series-1 !important;
+    &.#{$prefix}editable {
+        border-bottom-color: $color-series-1 !important;
+    }
+}
+
+.#{$prefix}text-warning {
+    color: $color-series-2 !important;
+    &.#{$prefix}editable {
+        border-bottom-color: $color-series-2 !important;
+    }
+}
+
+.#{$prefix}text-success {
+    color: $color-series-4 !important;
+    &.#{$prefix}editable {
+        border-bottom-color: $color-series-4 !important;
+    }
+}
+
+.#{$prefix}text-pending {
+    color: var($--color-status-warning) !important;
+    &.#{$prefix}editable {
+        border-bottom-color: var($--color-status-warning) !important;
+    }
+}
+
+.#{$prefix}text-info {
+    color: $color-series-6 !important;
+    &.#{$prefix}editable {
+        border-bottom-color: $color-series-6 !important;
+    }
+}
+
+.#{$prefix}text-notification {
+    color: var($--color-status-error);
+    &.#{$prefix}editable {
+        border-bottom-color: var($--color-status-error);
+    }
+}
+
+.#{$prefix}text-border {
+    color: var($--color-app-border);
+}
+
+.#{$prefix}text-unread {
+    font-weight: 700;
+    .#{$prefix}offcanvas & {
+        color: var($--color-text-inverted) !important;
+    }
+}
+
+.#{$prefix}text-underline {
+    text-decoration: underline;
+}
+
+.#{$prefix}text-underline-dotted {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.#{$prefix}text-underline-dashed {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.#{$prefix}text-underline-link {
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px dashed var($--color-text-link);
+        bottom: 2px;
+        left: 0;
+    }
+}

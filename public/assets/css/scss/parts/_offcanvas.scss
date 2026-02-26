@@ -1,0 +1,106 @@
+.#{$prefix}offcanvas {
+    background: var($--color-app-theme) !important;
+    color: var($--color-app-theme-text) !important;
+    height: 42px;
+    .#{$prefix}avatar {
+        background: darkenColor($--color-app-theme);
+        border-color: darkenColor($--color-app-theme);
+        color: var($--color-app-theme-text) !important; 
+    }
+    .#{$prefix}button {
+        background: none !important; 
+        color: var($--color-app-theme-text) !important; 
+        &.#{$prefix}major {
+            background: var($--color-app-canvas) !important; 
+            color: var($--color-text-primary) !important; 
+            &:hover i {
+                color: var($--color-text-primary) !important; 
+            }
+        } 
+    }
+    .#{$prefix}round-button {
+        height: 24px;
+        min-width: 24px;
+        padding: 0;
+        width: 24px;
+    }
+    .#{$prefix}tabs {
+        border-bottom: none;
+        li {
+            color: var($--color-app-theme-text);
+            &.#{$prefix}selected {
+                color: #FFFFFF;
+                &::before {
+                    background: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.#{$prefix}offcanvas-vertical {
+    background: var($--color-app-theme) !important;
+    color: var($--color-app-theme-text) !important;
+    width: 42px;
+    .#{$prefix}avatar {
+        background: darkenColor($--color-app-theme);
+        border-color: darkenColor($--color-app-theme);
+        color: var($--color-app-theme-text) !important; 
+    }
+    .#{$prefix}button {
+        background: none !important; 
+        color: var($--color-app-theme-text) !important; 
+        &.#{$prefix}major {
+            background: var($--color-app-canvas) !important; 
+            color: var($--color-text-primary) !important; 
+            &:hover i {
+                color: var($--color-text-primary) !important; 
+            }
+        } 
+    }
+    .#{$prefix}round-button {
+        height: 24px;
+        min-width: 24px;
+        padding: 0;
+        width: 24px;
+    }
+    .#{$prefix}tabs {
+        border-bottom: none;
+        li {
+            color: var($--color-app-theme-text);
+            &.#{$prefix}selected {
+                color: #FFFFFF;
+                &::before {
+                    background: #FFFFFF;
+                }
+            }
+        }
+    }
+    .#{$prefix}tab.#{$prefix}selected,
+    .#{$prefix}tab:hover {
+        background: darkenColor($--color-app-theme) !important;
+        color: var($--color-text-inverted) !important;
+    }
+    .#{$prefix}tab.#{$prefix}selected {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 3px;
+            background: var($--color-app-canvas) !important;
+        }
+    }
+}
+
+.#{$prefix}offcanvas-adjust {
+    padding-top: 3px;
+}
+
+.#{$prefix}mobile {
+    .#{$prefix}offcanvas {
+        height: auto;
+    }
+}

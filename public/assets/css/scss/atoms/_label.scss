@@ -1,0 +1,79 @@
+.#{$prefix}label {
+    background: var($--color-app-canvas); 
+    border: 1px solid var($--color-app-border);
+    border-radius: 50px;
+    display: inline-block;
+    color: var($--color-text-secondary);
+    font-size: .6rem !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: $padding-size/3 $padding-size;
+    text-align: center;
+    line-height: initial;
+    &.#{$prefix}filled {
+        border: none;
+        background: Var($--color-app-accent);
+        min-width: 100px;
+    }
+    &.#{$prefix}label-error {
+        background: var($--color-status-error-accent);
+        border-color: var($--color-status-error-accent);  
+        color: var($--color-status-error);
+    }
+    &.#{$prefix}label-warning {
+        background: var($--color-status-warning-accent);
+        border-color: var($--color-status-warning-accent);  
+        color: var($--color-status-warning);
+    }
+    &.#{$prefix}label-success {
+        background: var($--color-status-success-accent);
+        border-color: var($--color-status-success-accent); 
+        color: var($--color-status-success);
+    }
+    &.#{$prefix}label-plain {
+        background: var($--color-app-hover);
+        color: var($--color-text-secondary);
+        border-color: var($--color-app-hover);  
+    }
+    &.#{$prefix}label-kai {
+        background: linear-gradient(0deg, rgba(9,247,146,1) 0%, rgba(0,164,253,1) 100%);
+        color: var($--color-text-inverted);
+        border-color: none; 
+    }
+    &.#{$prefix}label-info {
+        background: var($--color-status-info-accent);
+        border-color: var($--color-status-info-accent);  
+        color: var($--color-status-info);
+        &.#{$prefix}chat-mention {
+            display: inline-block;
+            float: none;
+            padding: 0 $padding-size/2;
+        }
+    }
+    &.#{$prefix}fixed {
+        border-color: var($--color-app-canvas);
+        min-width: 100px;
+    }
+    &.#{$prefix}selected {
+        border-color: var($--color-app-theme);
+    }
+}
+
+.#{$prefix}text {
+    &.#{$prefix}tag-more {
+        text-overflow: clip;
+        width: 150px !important;
+        .#{$prefix}label {
+            display: inline-block;
+            position: relative;
+            top: -2px;
+        }
+        -webkit-mask-image: linear-gradient(270deg, transparent 22px, var($--color-app-canvas) 50px);
+        mask-image: linear-gradient(270deg, transparent 22px, var($--color-app-canvas) 50px);
+    }
+}
+
+.#{$prefix}label-trial {
+    color: #FFCE43 !important;
+    padding-top: 13px !important;
+}

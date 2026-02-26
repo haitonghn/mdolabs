@@ -1,0 +1,44 @@
+.#{$prefix}wizard {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    li {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        &:last-of-type {
+            flex: 0 0 auto;
+        }
+        .#{$prefix}circle {
+            background: var($--color-app-border);
+            border-radius: 50%;
+            color: var($--color-text-secondary);
+            width: $touch-factor;
+            height: $touch-factor;
+            font-size: small;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .#{$prefix}title {
+            max-width: 10rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .#{$prefix}connector {
+            height: 1px;
+            background: var($--color-app-border);
+            flex: 1;
+            margin: 0 1rem;
+        }
+        &.#{$prefix}selected .#{$prefix}circle,
+        &.#{$prefix}complete .#{$prefix}circle {
+            background: var($--color-app-theme);
+            color: var($--color-text-inverted);
+        }
+      }
+  }

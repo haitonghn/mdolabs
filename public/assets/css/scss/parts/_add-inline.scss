@@ -1,0 +1,28 @@
+.#{$prefix}add-inline {
+    background: var($--color-app-accent);
+    border: 1px solid var($--color-app-border); 
+    border-radius: $border-radius;
+    min-height: 32px;
+    overflow: hidden;
+    input, textarea {
+        margin: $padding-size/2 0; 
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+    input {
+        height: 32px;
+        line-height: 32px;
+    }
+    textarea {
+        resize: none;
+    }
+    &.#{$prefix}inverted {
+        background: var($--color-app-canvas);
+    }
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}

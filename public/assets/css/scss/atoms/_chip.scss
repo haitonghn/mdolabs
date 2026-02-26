@@ -1,0 +1,122 @@
+.#{$prefix}chip {
+  display: inline-block;
+  background: var($--color-app-border);
+  border: 1px solid var($--color-app-border);
+  padding: 3px;
+  border-radius: $border-radius;
+  font-size: .75rem;
+  text-transform: uppercase;
+  height: 20px;
+  overflow:hidden;
+  cursor: pointer;
+  span + i {
+      font-size: .7rem;
+  }
+  &.#{$prefix}chip-ref {
+    border-left: 2px solid var($--color-text-secondary);
+    margin-top: 3px;
+  }
+  .#{$prefix}tab.#{$prefix}selected > & {
+    border-bottom: 2px solid var($--color-app-theme);
+  }
+  &.#{$prefix}checked {
+    background: var($--color-app-hover);
+  }
+  &.#{$prefix}label-1 {
+    background: #6DC8C9;
+    border-color: #6DC8C9;
+    color: darken(#6DC8C9, 35%);
+  }
+  &.#{$prefix}label-2 {
+    background: #FFB27A;
+    border-color: #FFB27A;
+    color: darken(#FFB27A, 35%);
+  }
+  &.#{$prefix}chat-reply {
+    display: block;
+    height: auto;
+    float:left;
+    margin-bottom: $padding-size/2;
+    line-height: 20px;
+    padding-top: $padding-size/2;
+    padding-bottom: $padding-size/2;
+    white-space: wrap;
+  }
+}
+
+.#{$prefix}chip-list {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    margin-top: $padding-size/2;
+    padding: 0;
+    li {
+        display: inline-block;
+        white-space: nowrap;
+        margin-right: 3px;
+        margin-bottom: 3px;
+        font-size: 0;
+        .#{$prefix}chip {
+            display: block;
+            float: left;
+            span {
+                display: block;
+                float: left;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                position: relative;
+            }
+            &.#{$prefix}chip-wrap {
+                span {
+                    font-size: .7rem;
+                    line-height: 12px;
+                }
+            }
+            &.#{$prefix}chip-search {
+                background: none;
+                border-color: var($--color-app-border);
+                border-radius: 50px;
+                color: var($--color-text-secondary);
+                width: 160px;
+                cursor: text;
+                &:hover {
+                  background: none;
+                }
+            }
+            &.#{$prefix}selected {
+              background-color: #828F9F;
+              border-color: #828F9F;
+              color: var($--color-text-inverted);
+              .#{$prefix}text-notification {
+                color: var($--color-text-inverted) !important;
+              }
+          }
+        }
+    }
+    .#{$prefix}field-input & {
+      .#{$prefix}chip-search {
+        border: none;
+      }
+    }  
+    &.#{$prefix}flat {
+      margin-top: 0;
+    }
+}
+
+.#{$prefix}chat-list {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 24px;
+  margin-bottom: 6px;
+}
+
+.#{$prefix}chat-entry {
+  &:hover {
+    .#{$prefix}chip {
+      background: var($--color-app-canvas);
+    }
+  }
+}

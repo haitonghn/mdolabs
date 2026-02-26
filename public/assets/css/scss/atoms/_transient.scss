@@ -1,0 +1,16 @@
+.#{$prefix}transient {
+    padding: $padding-size*2 $padding-size*2;
+    border-radius: $border-radius;
+    background: var($--color-app-theme);
+    color: var($--color-text-inverted);
+    position: fixed;
+    bottom:  $padding-size*3;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 100;
+    a {
+        color: var($--color-text-inverted);
+        text-decoration: underline;
+    }
+}

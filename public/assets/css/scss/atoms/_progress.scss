@@ -1,0 +1,62 @@
+.#{$prefix}progress {
+    background: var($--color-app-border);
+    border-radius: $border-radius;
+    display: block;
+    height: 6px;
+    min-width: 60px;
+    > span {
+        background: var($--color-app-theme);
+        border-radius: 3px;
+        display: block;
+        height: 6px;
+        width: 0;
+    }
+    &.#{$prefix}progress-number {
+        position: relative;
+        margin-right: 42px;
+        &::before {
+            content: attr(data-progress);
+            position: absolute;
+            display: inline-block;
+            top: -10px;
+            right: -42px;
+            height: 24px;
+            line-height: 24px;
+        }
+    }
+}
+
+.#{$prefix}progress-segment {
+    background: var($--color-app-accent);
+    border-radius: $border-radius;
+    display: flex;
+    width: 100%;
+    > div {
+        margin-right: 3px;
+        height: 6px;
+        &:first-child {
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+        }
+        &:last-child {
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+            margin-right: 0;
+        }
+        &.#{$prefix}success-segment {
+            background: $color-series-4;
+        }
+        &.#{$prefix}warning-segment {
+            background: $color-series-2;
+        }
+        &.#{$prefix}error-segment {
+            background: $color-series-1;
+        }
+        &.#{$prefix}info-segment {
+            background: $color-series-6;
+        }
+        &.#{$prefix}default-segment {
+            background: #6B717E;
+        }
+    }
+}

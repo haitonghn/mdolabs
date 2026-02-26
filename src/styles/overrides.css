@@ -1,0 +1,40 @@
+/* Additional React-specific fixes for MDO design system */
+
+/* Ensure navigation panels are scrollable */
+#home-navigation-panel,
+#home-navigation-panel-settings {
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+/* Ensure content areas fill available space */
+.mdo-allow-overflow {
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* Fix for flex layout in main app */
+.mdo-card {
+  display: flex;
+  height: 100vh;
+}
+
+.mdo-offcanvas-vertical {
+  flex-shrink: 0;
+}
+
+#sidesheet-base {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Ensure tab content displays properly */
+.mdo-tab-content {
+  height: 100%;
+}
+
+/* Navigation panel visibility */
+.mdo-navigation {
+  display: flex;
+  flex-direction: column;
+}

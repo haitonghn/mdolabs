@@ -1,0 +1,61 @@
+.#{$prefix}rule-list {
+    list-style-type: none;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    padding: 0;
+    width: 100%;
+    li {
+      position: relative;
+      &::before {
+        display: block;
+        content: '';
+        height: 100%;
+        width: 1px;
+        margin-top: 36px;
+        background: var($--color-app-border);
+        position: absolute;
+        top: 0;
+        left: 40px;
+      }
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+      > ul {
+        padding-left: 80px;
+        margin-bottom: 0;
+      }
+      .#{$prefix}card {
+        background: var($--color-app-canvas);
+        > div {
+            padding: 6px 0;
+        }
+      }
+      &.#{$prefix}rule-new {
+        .#{$prefix}card {
+          background: none;
+        }
+      }
+    }
+  }
+
+  .#{$prefix}rule-operand {
+    background: var($--color-app-accent) !important;
+    width: 80px;
+    a {
+        color: var($--color-text-secondary) !important;
+    }
+  }
+
+  .#{$prefix}rule-condition {
+    a {
+        color: var($--color-text-secondary) !important;
+    }
+  }
+
+  .#{$prefix}rule-menu {
+    color: var($--color-text-secondary) !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }

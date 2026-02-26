@@ -1,0 +1,149 @@
+.#{$prefix}header {
+    box-shadow: none;
+    background: var($--color-app-canvas) !important;
+    @include respond-to('small') {
+        box-shadow: var($--box-shadow); 
+        z-index: 1;    
+    }
+}
+
+.#{$prefix}header-alt {
+    box-shadow: none;
+    background: var($--color-app-accent) !important;
+    @include respond-to('small') {
+        box-shadow: var($--box-shadow); 
+        z-index: 1;    
+    }
+}
+
+.#{$prefix}sidebar {
+    background: var($--color-app-accent) !important;
+    display: none !important;
+    @include respond-to('medium') {
+        display: block !important;     
+    }
+}
+
+.#{$prefix}no-desktop {
+    display: block !important; 
+    @include respond-to('small') {
+        display: none !important;     
+    }
+}
+
+.#{$prefix}no-desktop-inline {
+    display: inline-block !important; 
+    @include respond-to('small') {
+        display: none !important;     
+    }
+}
+
+.#{$prefix}no-desktop-flex {
+    display: flex !important; 
+    @include respond-to('small') {
+        display: none !important;     
+    }
+}
+
+.#{$prefix}no-menu {
+    > * {
+        display: block !important; 
+    }
+    padding-right: 0;
+    @include respond-to('medium') {
+        > * {
+            display: none !important; 
+        }
+        padding-right: $padding-size;
+    }
+}
+
+.#{$prefix}no-mobile {
+    display: none !important; 
+    @include respond-to('small') {
+        display: block !important;     
+    }
+}
+
+.#{$prefix}no-mobile-cell {
+    display: none !important; 
+    @include respond-to('small') {
+        display: table-cell !important;     
+    }
+}
+
+.#{$prefix}no-mobile-flex {
+    display: none !important; 
+    @include respond-to('small') {
+        display: flex !important;     
+    }
+}
+
+.#{$prefix}no-mobile-table-cell {
+    display: none !important; 
+    @include respond-to('small') {
+        display: table-cell !important;     
+    }
+}
+
+.#{$prefix}constrained {
+    margin-left: 0;
+    margin-right: 0;
+    .#{$prefix}back-arrow {
+        position: relative;
+        left: 0;
+    }
+    @include respond-to('medium') {
+        margin-left: 48px !important;
+        margin-right: 48px !important;
+        .#{$prefix}back-arrow {
+            background-color: transparent;
+            position: absolute;
+            left: -36px;
+        }
+    }
+}
+
+.#{$prefix}constrained-left {
+    padding-left: 0;
+    padding-right: 0;
+    .#{$prefix}back-arrow {
+        position: relative;
+        left: 0;
+    }
+    @include respond-to('medium') {
+        padding-left: 48px !important;
+    }
+}
+
+.#{$prefix}constrained-properties {
+    margin-left: 0;
+    margin-right: 0;
+    @include respond-to('medium') {
+        margin-left: 48px !important;
+        margin-right: 12px !important;
+    }
+}
+
+.#{$prefix}constrained-alt {
+    width: 100%;
+    @include respond-to('medium') {
+        width: 60% !important;
+    }
+}
+
+.#{$prefix}constrained-fixed {
+    width: 60%;
+}
+
+.#{$prefix}dashboard-configure {
+    background: var($--color-app-accent) !important;
+    width: 360px;
+}
+
+.#{$prefix}dashboard-edit {
+    display: none !important;
+    &.#{$prefix}enabled {
+        display: block !important;
+    }
+}

@@ -1,0 +1,92 @@
+$--color-app-theme: --color-app-theme;
+$--color-app-theme-h: --color-app-theme-h;
+$--color-app-theme-s: --color-app-theme-s;
+$--color-app-theme-l: --color-app-theme-l;
+$--color-app-border: --color-app-border;
+$--color-app-border-h: --color-app-border-h;
+$--color-app-border-s: --color-app-border-s;
+$--color-app-border-l: --color-app-border-l;
+$--color-app-theme-text: --color-app-theme-text;
+$--color-app-tab: --color-app-tab;
+$--color-app-canvas: --color-app-canvas;
+$--color-app-hover:  --color-app-hover;
+$--color-app-accent: --color-app-accent;
+$--color-app-filter: --color-app-filter;
+$--color-text-primary: --color-text-primary;
+$--color-text-secondary: --color-text-secondary;
+$--color-text-disabled: --color-text-disabled;
+$--color-text-link: --color-text-link;
+$--color-text-inverted: --color-text-inverted;
+$--box-shadow: --box-shadow;
+$--color-status-error: --color-status-error;
+$--color-status-success: --color-status-success;
+$--color-status-warning: --color-status-warning;
+$--color-status-info: --color-status-info;
+$--color-status-error-accent: --color-status-error-accent;
+$--color-status-success-accent: --color-status-success-accent;
+$--color-status-warning-accent: --color-status-warning-accent;
+$--color-status-info-accent: --color-status-info-accent;
+
+$theme-map-light: (
+    $--color-app-theme: hsl(215, 30%, 26%),
+    $--color-app-theme-h: 215,
+    $--color-app-theme-s: 30%,
+    $--color-app-theme-l: 26%,
+    $--color-app-border: hsl(213, 41%, 89%),
+    $--color-app-border-h: 213,
+    $--color-app-border-s: 41%,
+    $--color-app-border-l: 89%,
+    $--color-app-tab: hsl(215, 30%, 26%),
+    $--color-app-theme-text: #B7BFCE,
+    $--color-app-canvas: #FFFFFF,
+    $--color-app-hover:  #EBF1F5,
+    $--color-app-accent: #F8FBFD,
+    $--color-app-filter: #828F9F,
+    $--color-text-primary: #272D37,
+    $--color-text-secondary: #646F79,
+    $--color-text-disabled: #CBCFD3,
+    $--color-text-link: #0078D4,
+    $--color-text-inverted: #FFFFFF,
+    $--box-shadow: 0 0 3px rgba(108, 124, 139, .5),
+    $--color-status-error: #B52318,
+    $--color-status-success: #047A49,
+    $--color-status-warning: #B54707,
+    $--color-status-info: #016BA3,
+    $--color-status-error-accent: #FEE4E2,
+    $--color-status-success-accent: #D1FADF,
+    $--color-status-warning-accent: #FFEAD6,
+    $--color-status-info-accent: #E1F3FE,
+);
+
+$theme-map-dark: (
+    $--color-app-theme: hsl(223, 10%, 14%),
+    $--color-app-theme-h: 223,
+    $--color-app-theme-s: 10%,
+    $--color-app-theme-l: 14%,
+    $--color-app-border: hsl(213, 13%, 17%),
+    $--color-app-border-h: 213,
+    $--color-app-border-s: 13%,
+    $--color-app-border-l: 17%,
+    $--color-app-tab: #FFFFFF,
+    $--color-app-theme-text: #B7BFCE,
+    $--color-app-canvas: #363D44,
+    $--color-app-hover:  #2A3033,
+    $--color-app-accent: #343B41,
+    $--color-app-filter: #212328,
+    $--color-text-primary: #EFEFEF,
+    $--color-text-secondary: #A5A3A9,
+    $--color-text-disabled: #CBCFD3,
+    $--color-text-link: #40A6FF,
+    $--color-text-inverted: #CCCCCC,
+    $--box-shadow: 0 0 3px rgba(21, 25, 28, .9),
+    $--color-status-error: #EA4C3A,
+    $--color-status-success: #4CAF50,
+    $--color-status-warning: #FF9800,
+    $--color-status-info: #03A9F4,
+    $--color-status-error-accent: inherit,
+    $--color-status-success-accent: inherit,
+    $--color-status-warning-accent: inherit,
+    $--color-status-info-accent: inherit,
+);
+
+

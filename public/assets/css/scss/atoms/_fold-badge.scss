@@ -1,0 +1,14 @@
+.#{$prefix}fold-badge {
+    position: absolute;
+    background: var($--color-status-error);
+    border-radius: 50%;
+    bottom: 12px;
+    left: 50%;
+    width: 36px;
+    margin-left: -18px;
+    color: var($--color-text-inverted);
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+}

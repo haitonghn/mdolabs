@@ -1,0 +1,12 @@
+.#{$prefix}upload {
+    background: var($--color-app-accent);
+    border-radius: 6px;
+    padding: $padding-size*2;
+    text-align: center;
+    min-height: 200px;
+    width: 100%;
+    &.#{$prefix}selected {
+        background: var($--color-app-accent);
+        border: 2px solid var($--color-app-accent);
+    }
+}

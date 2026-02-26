@@ -1,0 +1,53 @@
+.#{$prefix}skeleton {
+    position: relative;
+    > div {
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: placeholderSkeleton;
+        animation-timing-function: linear;
+        background: var($--color-app-border);
+        background-image: -webkit-gradient(linear, left center, right center, from($color-app-border), color-stop(.2, $color-app-accent), color-stop(.4, $color-app-border), to($color-app-border));
+        background-image: -webkit-linear-gradient(left, $color-app-border 0%, $color-app-accent 20%, $color-app-border 40%, $color-app-border 100%);
+        background-repeat: no-repeat;
+        background-size: 800px 48px;
+        height: 48px;
+        position: relative;
+
+        &.#{$prefix}skeleton-line,
+        &.#{$prefix}skeleton-line-half {
+            border-radius: 6px;
+            height: 10px;
+            margin-bottom: 10px;
+        }
+
+        &.#{$prefix}skeleton-line-half {
+            width: 50%;
+        }
+
+        &.#{$prefix}skeleton-avatar {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+        }
+
+        &.#{$prefix}skeleton-button {
+            border-radius: $border-radius;
+            height: 36px;
+            width: 36px;
+        }
+    }
+}
+
+.#{$prefix}skeleton-template {
+    display: none;
+}
+
+@keyframes placeholderSkeleton {
+    0% {
+        background-position: -468px 0;
+    }
+    100% {
+        background-position: 468px 0;
+    }
+}

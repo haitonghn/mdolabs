@@ -1,0 +1,49 @@
+.#{$prefix}login,
+.#{$prefix}profile {
+    background: var($--color-app-canvas);
+    border-radius: $border-radius;
+    margin: 0 auto;
+    position: relative;
+    top: 90px;
+    height: 520px;
+    width: 320px;
+    .#{$prefix}card {
+        background: none;
+    }
+}
+
+.#{$prefix}login-background {
+    background: url("../img/login_image.png") no-repeat !important;
+    background-origin: content-box !important;
+    
+    border-radius: 0 $border-radius $border-radius 0;
+}
+
+.#{$prefix}profile {
+    height: 690px;
+}
+
+.#{$prefix}logout {
+    height: 200px;
+}
+
+.#{$prefix}instance {
+    height: 440px !important;
+    width: 400px !important;
+}
+
+.#{$prefix}account {
+    height: 440px !important;
+}
+
+.#{$prefix}terms {
+    height: 75%;
+    min-height: 450px;
+}
+
+.#{$prefix}legal {
+    color: #B7BFCE;
+    a {
+        color: #B7BFCE;
+    }
+}

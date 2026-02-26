@@ -1,0 +1,19 @@
+.#{$prefix}scroll-guide {
+    background: var($--color-app-accent);
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    li {
+        display: block;
+        float: left;
+        padding: $padding-size/2 $padding-size*2;
+        line-height: $line-height;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        user-select: none;
+        margin-right: $padding-size;
+    }
+}

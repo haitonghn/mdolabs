@@ -1,0 +1,210 @@
+.#{$prefix}card {
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 100%;
+    position: relative;
+    user-select: none;
+    >div {
+        background-color: inherit;
+        color: inherit;
+        display: block;
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        position: relative;
+        > * {
+            vertical-align: top;
+        }
+        &.#{$prefix}atom {
+            flex: 0 0 auto;
+            min-width: auto;
+        }
+    }
+    &.#{$prefix}vertical {
+        flex-direction: column;
+        >div {
+            &.#{$prefix}section {
+                overflow: visible !important;
+                flex: 0 1 auto !important;
+            }
+            >.#{$prefix}content {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                overflow: auto;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &.#{$prefix}status {
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+        }
+        &.#{$prefix}status-new {
+            &::before {
+                background: var($--color-status-error);
+            }
+        }
+        &.#{$prefix}status-pending {
+            &::before {
+                background: var($--color-status-warning);
+            } 
+        }
+        &.#{$prefix}status-confirmed {
+            &::before {
+                background: var($--color-status-success); 
+            }
+        }
+    }
+    &.#{$prefix}contained {
+        height: auto;
+    }
+    &.#{$prefix}unread {
+        background-color: var($--color-app-canvas);
+    }
+    &.#{$prefix}read {
+        background-color: var($--color-app-accent);
+    }
+    &.#{$prefix}hover {
+        &:hover {
+            background-color: var($--color-app-hover) !important;
+            > * {
+                background: none !important;
+            }
+        }
+    }
+    
+    &.#{$prefix}selected {
+        background-color: var($--color-app-hover) !important;
+        > * {
+            background: none !important;
+        }
+        &.#{$prefix}tab-nav {
+            position: relative;
+            font-weight: 600;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: 0;
+                bottom: 6px;
+                width: 3px;
+                background: var(--color-app-theme) !important;
+                border-radius: 3px;
+            }
+        }
+    }
+    &.#{$prefix}selected-alt,
+    &.#{$prefix}hover-alt:hover {
+        &::before {
+            content: '';
+            background: var($--color-app-theme);
+            position: absolute;
+            left: 4px;
+            top: 6px;
+            height: $touch-factor;
+            width: 3px;
+        }
+        > * {
+            background: none !important;
+        }
+    }
+    .#{$prefix}offcanvas &.#{$prefix}hover {
+        &:hover {
+            background-color: darken($color-app-theme, 6%) !important;
+            > * {
+                background: inherit !important;
+            }
+        }
+    }
+    .#{$prefix}offcanvas &.#{$prefix}selected {
+        background-color: darken($color-app-theme, 6%) !important;
+        &::before {
+            content: '';
+            background: var($--color-app-theme);
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+        }
+        color: var($--color-text-inverted) !important;
+        > * {
+            background: inherit !important;
+        }
+    }
+}
+
+.#{$prefix}card-list {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li { 
+        display: inline-block;
+        margin-right: $padding-size;
+        margin-bottom: $padding-size;
+        height: 240px;
+        width: 200px;
+        position: relative;
+        > span {
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: -2px;
+            right: -14px;
+            height: 32px;
+            width: 32px;
+            z-index: 2;
+            > img {
+                display: inline-block;
+                position: absolute;
+                left: 4px;
+                top: 3px;
+            }
+            > i {
+                display: inline-block;
+                position: absolute;
+                left: 7px;
+                top: 7px;
+                font-size: 1.4rem;
+            }
+            > span {
+                display: inline-block;
+                position: absolute;
+                left: 7px;
+                top: 6px;
+            }
+        }
+    }
+    &.#{$prefix}card-center { 
+        justify-content: center;
+    }
+}
+
+.#{$prefix}card-list.#{$prefix}condensed {
+    li { 
+        height: auto;
+    }
+}
+
+.#{$prefix}card-list.#{$prefix}fixed {
+    display: flex;
+}
+
+.#{$prefix}card-list.#{$prefix}flow {
+    li { 
+        float: left;
+    }
+}

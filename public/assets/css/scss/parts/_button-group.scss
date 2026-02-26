@@ -1,0 +1,40 @@
+.#{$prefix}button-group {
+    background-color: inherit;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        padding-left: 1px;
+        .#{$prefix}button {
+            border-radius: 0;
+            float: left;
+            font-weight: normal;
+            min-width: $touch-factor + 2;
+        }
+        &:first-child {
+            padding-left: 0;
+            .#{$prefix}button {
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+            }
+        }
+        &:last-child {
+            .#{$prefix}button {
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+            }
+        }
+    }
+    &.#{$prefix}condensed {
+        li {
+            padding-left: 0;
+        }
+    }
+}
+
+tr:hover .#{$prefix}button-group {
+    li {
+        border-left-color: var($--color-app-hover);
+    }
+}

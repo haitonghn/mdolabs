@@ -1,0 +1,34 @@
+.#{$prefix}stepper {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    > li {
+        display: block;
+        padding-left:  $padding-size;
+        position: relative;
+        min-height: $touch-factor; 
+        margin-bottom: $padding-size;
+        >div:first-child {
+            border-bottom: 1px solid var($--color-app-border);
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        .#{$prefix}stepper-content {
+            padding: $padding-size 0;
+        }
+    }
+    .#{$prefix}mobile & {
+        li {
+            padding-left: 0;
+            margin-bottom: 0;
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

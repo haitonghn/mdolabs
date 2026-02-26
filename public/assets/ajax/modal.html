@@ -1,0 +1,1155 @@
+<div class="mdo-cover"></div>
+
+<input id="file-input" type="file" name="name" style="display: none;" />
+
+<div class="mdo-item-pick-cover">
+    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="36px" height="36px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve">
+        <path opacity="0.2" fill="#455A64" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+        s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+        c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+        <path fill="#455A64" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+        C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml"
+        attributeName="transform"
+        type="rotate"
+        from="0 20 20"
+        to="360 20 20"
+        dur="0.6s"
+        repeatCount="indefinite"/>
+        </path>
+    </svg>
+</div>
+
+<div id="new-filter" class="mdo-modal" data-modal-width="600px" data-modal-height="500px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-bottom-medium mdo-padding-top-medium">
+                
+                <div><div class="mdo-text mdo-font-x-large">New filter</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="mdo-content">
+                <div class="mdo-field">
+                    <span class="mdo-field-label mdo-required">Name</span>
+                    <div class="mdo-field-input"><input type="text" value=""></div>
+                </div>
+                <div class="mdo-margin-top-large mdo-margin-bottom-large mdo-border-bottom-dashed"></div>
+                <div class="mdo-filter-pill">Species<a href="#">Beef</a><i class="mdo-icon-close"></i></div>
+                <div class="mdo-filter-pill">Status<a href="#">Frozen</a><i class="mdo-icon-close"></i></div>
+ 
+                <div class="mdo-filter-pill mdo-filter-pill-new"><i class="mdo-icon-plus mdo-margin-right-small"></i>Add condition</div>
+            </div>
+        </div>
+
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div>
+               
+                </div>
+                <div class="mdo-atom"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close">Done</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="edit-password" class="mdo-modal" data-modal-width="500px" data-modal-height="490px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div><div class="mdo-text mdo-font-x-large">Change password</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        
+        <div>
+                        
+            <div class="mdo-content mdo-padding-right-medium">
+
+                <p class="mdo-notice mdo-notice-error">
+					Your request could not be completed
+				</p>
+
+                <div class="mdo-field">
+                    <span class="mdo-field-label">Current password</span>
+                    <div class="mdo-field-input"><input type="password" value="hiddenpassword"></div>
+                </div>
+
+                <div class="mdo-margin-top-large mdo-margin-bottom-large mdo-border-bottom-dashed"></div>
+
+                <div class="mdo-field">
+                    <span class="mdo-field-label">New password</span>
+                    <div class="mdo-field-input"><input type="password" value="hiddenpassword"></div>
+                </div>
+                
+                <div class="mdo-field">
+                    <span class="mdo-field-label">Repeat new password</span>
+                    <div class="mdo-field-input"><input type="password" value="hiddenpassword"></div>
+                </div>
+                <br>
+                <!--<div class="mdo-progress"><span style="width: 30%;background: #E96451;"></span></div>
+                <p class="mdo-text-secondary mdo-font-small">Password strength: weak</p>-->
+               
+            </div>
+        </div>
+
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-right-medium">
+                <div>
+                
+                </div>
+                <div class="mdo-atom"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close">Change</span></div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div id="new-chat-room" class="mdo-modal" data-modal-width="500px" data-modal-height="420px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-bottom-medium mdo-padding-top-medium">
+                
+                <div><div class="mdo-text mdo-font-x-large">New chat</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+
+        <div>
+            <div class="mdo-content">
+                <div class="mdo-field mdo-field-has-control">
+                    <div class="mdo-field-input">
+                        <input type="text" placeholder="Type name or email to add">
+                        <span class="mdo-button"><i class="mdo-icon-chevron-down"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div>
+                   
+                </div>
+                <div class="mdo-atom"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close">Ok</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="add-files" class="mdo-modal" data-modal-width="500px" data-modal-height="400px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div><div class="mdo-text mdo-font-x-large">Happy Foods Co &middot; Brendan Allerton</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+       
+        <div>
+                        
+            <div class="mdo-content mdo-padding-right-medium">
+                
+                <div class="mdo-add-inline mdo-padding-left-small mdo-padding-right-small">
+
+                    <div class="mdo-card mdo-border-bottom">
+                        <div class="mdo-field-input mdo-padding-left-medium">
+                            <p class="mdo-chat-editor" contenteditable="true"></p>
+                        </div>
+                        <div class="mdo-atom"><span class="mdo-button "><i class="mdo-icon-send-chat"></i></span></div>
+                    </div>
+                
+                    <div class="mdo-card">                            
+                        <div class="mdo-atom"><span class="mdo-button mdo-editor-button  mdo-font-small"><i class="mdo-icon-editor-bold"></i></span></div>
+                        <div class="mdo-atom"><span class="mdo-button mdo-editor-button  mdo-font-small"><i class="mdo-icon-editor-italic"></i></span></div>
+                        <div class="mdo-atom"><span class="mdo-button mdo-editor-button "><i class="mdo-icon-editor-strikethrough"></i></span></div>
+                        <div class="mdo-atom"><span class="mdo-button mdo-editor-button "><i class="mdo-icon-editor-number"></i></span></div>
+                        <div class="mdo-atom"><span class="mdo-button mdo-editor-button "><i class="mdo-icon-editor-bullet-list"></i></span></div>
+                        <div class="mdo-atom"><span class="mdo-button "><i class="mdo-icon-happiness"></i></span></div>
+                        
+                        <div></div>
+                    </div>
+            
+                </div>
+
+                <div class="mdo-border-bottom-dashed mdo-margin-top-large mdo-margin-bottom-large"></div>
+
+                <ul class="mdo-chip-list mdo-margin-bottom-medium">
+                    <li><div class="mdo-chip mdo-clickable mdo-no-select"><span><img class="mdo-file-ext" src="assets/img/ext/doc.svg" width="16" alt="proto"/>&nbsp;Shipment_notes.doc</span><i class="mdo-icon-close mdo-margin-left-medium"></i></div></li>
+                    <li><div class="mdo-chip mdo-clickable mdo-no-select"><span><img class="mdo-file-ext" src="assets/img/ext/xls.svg" width="16" alt="proto"/>&nbsp;Specification.xls</span><i class="mdo-icon-close mdo-margin-left-medium"></i></div></li>
+                    <li><div class="mdo-chip mdo-clickable mdo-no-select"><span><img class="mdo-file-ext" src="assets/img/ext/pdf.svg" width="16" alt="proto"/>&nbsp;Invoice.pdf</span><i class="mdo-icon-close mdo-margin-left-medium"></i></div></li>
+                </ul>
+                
+               
+            </div>
+        </div>
+
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-right-medium">
+                <div><div class="mdo-text"><a href="#">Add more files</a></div></div>
+                <div class="mdo-atom"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close" onclick="showFileToast('Posting message');">Add</span></div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+<div id="upload-dataset" class="mdo-modal" data-modal-width="800px" data-modal-height="600px">
+    <div class="mdo-card mdo-vertical">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-all-medium">
+                <div><div class="mdo-text mdo-font-x-large">Data check (step 1 of 3): upload your data</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div class="mdo-section mdo-padding-all-medium">
+            <div class="mdo-progress mdo-margin-bottom-medium" data-progress="30%"><span style="width: 30%;"></span></div>
+                
+        </div>
+
+        <div>      
+            <div class="mdo-content mdo-padding-top-medium mdo-padding-left-medium mdo-padding-right-medium mdo-allow-overflow">
+                <div class="mdo-justified mdo-constrained-alt mdo-text-center">
+                    <img src="assets/img/empty-table.svg" width="120" alt="image">
+                    
+                    <p class="mdo-text-secondary">Drag &amp; drop or select a file to upload</p>
+                    <p><span class="mdo-button mdo-minor mdo-margin-top-medium">Select a file</span></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-all-medium">
+                <div class="mdo-atom"><span class="mdo-button">Cancel</span></div>
+                <div>
+              
+                </div>
+                <div class="mdo-atom"><span class="mdo-button mdo-fixed-button mdo-major mdo-disabled">Next</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="run-schema" class="mdo-modal" data-modal-width="800px" data-modal-height="600px">
+    <div class="mdo-card mdo-vertical">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-all-medium">
+                <div class="mdo-atom"><div class="mdo-text mdo-font-x-large">Material</div></div>
+                <div class="mdo-atom"><span class="mdo-button" data-dropdown="#dropdown-switch-schema"><i class="mdo-icon-menu-arrow"></i></span></div>
+                <div></div>
+                <div class="mdo-atom mdo-padding-left-medium"><span class="mdo-button" data-sidesheet="#data-upload" data-sidesheet-parent="#sidesheet-base"><i class="mdo-icon-outbox-alt mdo-margin-right-small"></i>Upload data</span></div>
+                <div class="mdo-atom mdo-padding-left-medium"><span class="mdo-button mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+
+        <div class="mdo-padding-left-medium mdo-padding-right-medium">      
+
+            <p class="mdo-notice mdo-notice-info">
+                <i class="mdo-icon-information mdo-margin-right-small"></i>New data is available since the last schema run
+            </p>
+
+            <table class="mdo-table mdo-module mdo-hover">
+                <tbody>
+                    <tr>
+                        <td colspan="4"><div class="mdo-text"><a href="#">[Add schema]</a></div></td>
+                        
+                       
+                    </tr>
+                    <tr>
+                        <td><div class="mdo-text">Duplicate check</div></td>
+                        
+                        <td>
+                            
+                        </td>
+                        <td><div class="mdo-text mdo-text-secondary mdo-fixed mdo-text-right">Last run: 12 May 12:20:20</div></td>
+                        <td class="mdo-fixed">
+                            <span class="mdo-button mdo-minor mdo-float-right mdo-fixed-button" data-sidesheet="#schema" data-sidesheet-parent="#sidesheet-base">Run...</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><div class="mdo-text">Metadata check</div></td>
+                        
+                        <td>
+                            
+                        </td>
+                        <td><div class="mdo-text mdo-text-secondary mdo-fixed mdo-text-right">Running...</div></td>
+                        <td class="mdo-fixed">
+                            <span class="mdo-button mdo-minor mdo-float-right mdo-fixed-button mdo-spinner-active">Run...<img class="mdo-spinner" src="assets/img/spinner.svg" alt="loader"></span>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-all-medium">
+                <div class="mdo-atom"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div>
+              
+                </div>
+                <!--<div class="mdo-atom"><span class="mdo-button mdo-fixed-button mdo-major mdo-disabled">Next</span></div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="workflow-folder" class="mdo-modal" data-modal-width="600px" data-modal-height="450px">
+    <div class="mdo-card mdo-vertical">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-all-medium">
+                <div><div class="mdo-text mdo-font-x-large">New filter</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div class="mdo-padding-top-medium mdo-padding-left-medium mdo-padding-right-medium mdo-allow-overflow">      
+            <div class="form-field">
+                <div class="form-field__control">
+                    <input id="workflow-folder-field1" type="text" class="form-field__input" placeholder=" " />
+                    <label for="workflow-folder-field1" class="form-field__label">Name</label>
+                    <div class="form-field__bar"></div>
+                </div>
+            </div>
+
+            <div class="mdo-card mdo-contained">
+                <div class="mdo-allow-overflow">
+                    <div class="mdo-filter-pill">Module:<a href="#">All</a></div>
+                    <div class="mdo-filter-pill"><i class="mdo-icon-more"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-all-medium">
+                <div class="mdo-atom"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div>
+              
+                </div>
+                <div class="mdo-atom"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close">Create</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="alert" class="mdo-modal" data-modal-width="600px" data-modal-height="250px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div><div class="mdo-text mdo-font-x-large">Confirmation</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div>
+    
+            <p>Are you sure you want to perform this action?</p>
+           
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div></div>
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close">Ok</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="save-filter" class="mdo-modal" data-modal-width="600px" data-modal-height="220px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div><div class="mdo-text mdo-font-x-large">Save filter as...</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div>
+    
+            <div class="mdo-field">
+                <span class="mdo-field-label mdo-required">Filter name</span>
+                <div class="mdo-field-input"><input type="text" value="Plant 001"></div>
+            </div>
+           
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div></div>
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close" onclick="confirm('The action has been confirmed');">Save</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="delegation-mode" class="mdo-modal" data-modal-width="600px" data-modal-height="600px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div class="mdo-atom mdo-padding-right-medium mdo-allow-overflow">
+                    
+                    <div class="mdo-text mdo-allow-overflow"><input class="mdo-toggle mdo-float-left" type="checkbox" checked></div>
+                </div>
+                <div><div class="mdo-text mdo-font-x-large">Delegation mode</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div>
+
+            <div class="mdo-field mdo-field-has-control mdo-fill-width">
+                <span class="mdo-field-label mdo-required">Delegate to</span>
+                <div class="mdo-field-input">
+                    <input type="text" placeholder="Type user name to add">
+                    <span class="mdo-button mdo-hidden"><i class="mdo-icon-find"></i></span>
+                </div>
+            </div>
+            <table class="mdo-table mdo-module mdo-hover mdo-flat-alt">
+                <tbody>
+                    
+                    <tr>
+                        <td class=" mdo-fixed"><span class="mdo-avatar mdo-float-left">RW</span></td>
+                        <td class=" mdo-no-padding-left"><span class="mdo-text">Rick Woods</span></td>
+                        <td>
+                            <div class="mdo-filter-pill">Dataset<i class="mdo-icon-menu-arrow mdo-margin-left-small mdo-font-x-small"></i></div>
+                        </td>
+                        <td class="mdo-no-padding-right"><span class="mdo-button mdo-float-right"><i class="mdo-icon-recycle-bin"></i></span></td>
+                    </tr>
+
+                    <tr>
+                        <td class=" mdo-fixed"><span class="mdo-avatar mdo-float-left">SG</span></td>
+                        <td class=" mdo-no-padding-left"><span class="mdo-text">Steve Graham</span></td>
+                        <td>
+                            <div class="mdo-filter-pill">Dataset<i class="mdo-icon-menu-arrow mdo-margin-left-small mdo-font-x-small"></i></div>
+                        </td>
+                        <td class="mdo-no-padding-right"><span class="mdo-button mdo-float-right"><i class="mdo-icon-recycle-bin"></i></span></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <div class="mdo-field mdo-field-has-control mdo-fill-width mdo-margin-top-medium">
+                <span class="mdo-field-label mdo-required">Start</span>
+                <div class="mdo-field-input">
+                    <input type="text">
+                    <span class="mdo-button"><i class="mdo-icon-calendar"></i></span>
+                </div>
+            </div>
+
+            <div class="mdo-field mdo-field-has-control mdo-fill-width">
+                <span class="mdo-field-label mdo-required">End</span>
+                <div class="mdo-field-input">
+                    <input type="text">
+                    <span class="mdo-button"><i class="mdo-icon-calendar"></i></span>
+                </div>
+            </div>
+
+            <div class="mdo-field">
+                <span class="mdo-field-label">Message to delegatee</span>
+                <div class="mdo-field-input"><textarea rows="3"></textarea></div>
+                
+            </div>
+           
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div></div>
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close" onclick="confirm('The action has been confirmed');">OK</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="change-password" class="mdo-modal" data-modal-width="600px" data-modal-height="360px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div><div class="mdo-text mdo-font-x-large">Change password</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div>
+    
+            <div class="mdo-field">
+                <span class="mdo-field-label mdo-required">Current password</span>
+                <div class="mdo-field-input"><input type="text" value=""></div>
+            </div> 
+
+            <div class="mdo-field">
+                <span class="mdo-field-label mdo-required">New password</span>
+                <div class="mdo-field-input"><input type="text" value=""></div>
+            </div> 
+
+            <div class="mdo-field">
+                <span class="mdo-field-label mdo-required">Confirm new password</span>
+                <div class="mdo-field-input"><input type="text" value=""></div>
+            </div> 
+           
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div></div>
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close" onclick="confirm('The action has been confirmed');">OK</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="new-connection" class="mdo-modal" data-modal-width="900px" data-modal-height="90%">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div><div class="mdo-text mdo-font-x-large">Connect to...</div></div>
+                <div class="mdo-atom mdo-padding-right-large">
+                    <div class="mdo-filter-pill mdo-filter-pill-search"><input type="text" placeholder="Search"></div>
+                </div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div>
+    
+            <ul class="mdo-card-list">
+                <li>
+
+                    <div class="mdo-card mdo-vertical mdo-customer-card mdo-accent-alt">
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-unread">SAP</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="mdo-clickable mdo-text-center mdo-padding-bottom-large">
+                            <img class="mdo-margin-top-small" src="assets/img/sap.png" width="72" alt="proto">
+                            <span class="mdo-text mdo-wrap mdo-text-secondary mdo-font-small mdo-padding-left-medium mdo-padding-right-medium mdo-padding-top-medium">About this adapter</span>
+                        </div>
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-link">Select</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                
+                <li>
+                    <div class="mdo-card mdo-vertical mdo-customer-card mdo-accent-alt">
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-unread mdo-margin-bottom-small">Salesforce</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="mdo-clickable mdo-text-center mdo-padding-bottom-large">
+                            <img class="mdo-margin-top-medium mdo-margin-bottom-medium" src="assets/img/salesforce.png" width="69" alt="proto">
+                            <span class="mdo-text mdo-wrap mdo-text-secondary mdo-font-small mdo-padding-left-medium mdo-padding-right-medium mdo-padding-top-medium">About this adapter</span>
+                        </div>
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-link">Select</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+           
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div></div>
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close">Connect</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="new-database" class="mdo-modal" data-modal-width="960px" data-modal-height="550px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-large">
+                <div><div class="mdo-text mdo-font-x-large">New dataset</div></div>
+                
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div class="mdo-text-center">
+            <ul class="mdo-card-list mdo-card-center">
+					
+                <li>
+                    
+                    <div class="mdo-card mdo-vertical mdo-customer-card mdo-accent-alt mdo-allow-hover">
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-unread">Explore datasets</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="mdo-clickable mdo-text-center mdo-padding-bottom-large">
+                            <img src="assets/img/dataset-chk.svg" height="72" alt="proto">
+                            <span class="mdo-text mdo-wrap mdo-text-secondary mdo-font-small mdo-padding-left-medium mdo-padding-right-medium mdo-padding-top-medium mdo-margin-top-small">Get a dataset from<br> the MDO standard library</span>
+                        </div>
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-link">Explore</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                   
+                    <div class="mdo-card mdo-vertical mdo-customer-card mdo-accent-alt mdo-allow-hover">
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-unread">Load from file</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="mdo-clickable mdo-text-center mdo-padding-bottom-large">
+                            <img src="assets/img/dataset-file.svg" height="72" alt="proto">
+                            <span class="mdo-text mdo-wrap mdo-text-secondary mdo-font-small mdo-padding-left-medium mdo-padding-right-medium mdo-padding-top-medium mdo-margin-top-small">Create a dataset by uploading<br> a file with data</span>
+                        </div>
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-link">Select</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    
+                    <div class="mdo-card mdo-vertical mdo-customer-card mdo-accent-alt mdo-allow-hover">
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-unread">Create manually</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="mdo-clickable mdo-text-center mdo-padding-bottom-large">
+                            <img src="assets/img/dataset-manual.svg" height="72" alt="proto">
+                            <span class="mdo-text mdo-wrap mdo-text-secondary mdo-font-small mdo-padding-left-medium mdo-padding-right-medium mdo-padding-top-medium mdo-margin-top-small">Create a dataset by defining<br>its contents manually</span>
+                        </div>
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-link" data-dropdown="#dropdown-manual-dataset">Select<i class="mdo-icon-menu-arrow mdo-margin-left-small mdo-font-x-small"></i></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    
+                    <div class="mdo-card mdo-vertical mdo-customer-card mdo-accent-alt mdo-allow-hover">
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-unread">Data mapping</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="mdo-clickable mdo-text-center mdo-padding-bottom-large">
+                            <img src="assets/img/home-image-04.svg" height="72" alt="proto">
+                            <span class="mdo-text mdo-wrap mdo-text-secondary mdo-font-small mdo-padding-left-medium mdo-padding-right-medium mdo-padding-top-medium mdo-margin-top-small">Create a dataset by mapping<br>multiple data tables</span>
+                        </div>
+                        <div class="mdo-section">
+                            <div class="mdo-card mdo-padding-all-small">
+
+                                <div class="mdo-clickable">
+                                    <div class="mdo-text mdo-text-center mdo-text-link">Select</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+           
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div></div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="chk-publish" class="mdo-modal" data-modal-width="700px" data-modal-height="75%">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div><div class="mdo-text mdo-font-x-large">Publish to ConnektHub...</div></div>
+                
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div>
+            <div class="mdo-field">
+                <span class="mdo-field-label mdo-required">Name</span>
+                <div class="mdo-field-input"><input type="text" value=""></div>
+            </div> 
+            <div class="mdo-field">
+                <span class="mdo-field-label mdo-required">Description</span>
+                <div class="mdo-field-input"><textarea rows="3"></textarea></div>
+            </div>
+            <div class="mdo-field">
+                <span class="mdo-field-label">Screenshots</span><br>
+                <ul class="mdo-chip-list">
+                    <li><div class="mdo-chip mdo-clickable mdo-no-select"><span><img class="mdo-file-ext" src="assets/img/ext/img.svg" width="16" alt="proto">&nbsp;Screen1.png</span></div></li>
+                    <li><div class="mdo-chip mdo-clickable mdo-no-select"><span><img class="mdo-file-ext" src="assets/img/ext/img.svg" width="16" alt="proto">&nbsp;Screen2.png</span></div></li>
+                    <li><div class="mdo-chip mdo-clickable mdo-no-select"><span><img class="mdo-file-ext" src="assets/img/ext/img.svg" width="16" alt="proto">&nbsp;Screen3.png</span></div></li>
+                </ul>
+            </div>
+            <div class="mdo-field">
+                <span class="mdo-field-label">Labels</span>
+                <div class="mdo-field-input mdo-padding-top-small mdo-padding-bottom-small">
+                    <span class="mdo-font-x-small mdo-margin-right-small  mdo-label mdo-hollow">Label</span><span class="mdo-font-x-small mdo-margin-right-small  mdo-label mdo-hollow">Label</span><span class="mdo-font-x-small mdo-margin-right-small  mdo-label mdo-hollow">Label</span>
+                </div>
+            </div> 
+
+           
+           
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div></div>
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-major mdo-modal-close">Publish</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="diw-record-notes" class="mdo-float" data-float-width="300px" data-float-height="600px">
+    <div class="mdo-card mdo-vertical mdo-padding-bottom-medium mdo-padding-left-medium mdo-padding-right-medium">
+        <div class="mdo-section mdo-float-drag">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div><div class="mdo-text mdo-font-x-large">Record changelog</div></div>
+                <div class="mdo-atom"><span class="mdo-button mdo-float-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+
+        <div class="mdo-section mdo-padding-top-medium">
+            <div class="mdo-card">
+                <div class="mdo-allow-overflow">
+                    <div class="mdo-filter-pill mdo-filter-pill-binary">Changes</div>
+                    <div class="mdo-filter-pill mdo-filter-pill-binary">Notes</div>
+                    <div class="mdo-filter-pill">User<i class="mdo-icon-menu-arrow mdo-margin-left-small mdo-font-x-small"></i></div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="mdo-padding-top-medium">      
+            <div class="mdo-card mdo-contained mdo-padding-bottom-small mdo-padding-top-small mdo-chat-entry">
+                <div class="mdo-atom mdo-padding-right-medium"><span class="mdo-avatar"><i class="fa-light fa-pen"></i></span></div>
+                <div>
+                    <div class="mdo-text mdo-flat mdo-wrap"><span class="mdo-font-weight-medium">Sam Graham</span><br>
+                        <div class="mdo-card mdo-contained">
+                            <div><div class="mdo-text mdo-flat mdo-text-strike">Austral</div></div>
+                            <div class="mdo-atom mdo-padding-left-medium mdo-padding-right-medium"><div><div class="mdo-text mdo-flat"><i class="fa-light fa-arrow-right-long"></i></div></div></div>
+                            <div><div class="mdo-text mdo-flat">Australia</div></div>
+                        </div>
+                        <div class="mdo-card mdo-contained">
+                            <div><div class="mdo-text mdo-flat mdo-text-strike">Brng</div></div>
+                            <div class="mdo-atom mdo-padding-left-medium mdo-padding-right-medium"><div><div class="mdo-text mdo-flat"><i class="fa-light fa-arrow-right-long"></i></div></div></div>
+                            <div><div class="mdo-text mdo-flat">Bearing</div></div>
+                        </div>
+                        <span class="mdo-font-xx-small mdo-text-secondary">Today 3:15 PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mdo-card mdo-contained mdo-padding-bottom-small mdo-padding-top-small mdo-chat-entry">
+                <div class="mdo-atom mdo-padding-right-medium"><span class="mdo-avatar"><i class="fa-light fa-comment"></i></span></div>
+                <div>
+                    <div class="mdo-text mdo-flat mdo-wrap"><span class="mdo-font-weight-medium">Brendan Allerton</span><br><span class="mdo-chat-message">These changes need to be confirmed by <span class="mdo-label mdo-label-info mdo-chat-mention">@NickM</span> 🤔</span><br><span class="mdo-font-xx-small mdo-text-secondary">Today 3:15 PM</span></div>
+                </div>
+            </div>
+            <div class="mdo-card mdo-contained mdo-padding-bottom-small mdo-padding-top-small mdo-chat-entry">
+                <div class="mdo-atom mdo-padding-right-medium"><span class="mdo-avatar"><i class="fa-light fa-comment"></i></span></div>
+                <div>
+                    <div class="mdo-text mdo-flat mdo-wrap"><span class="mdo-font-weight-medium">Nick Mason</span><br><span class="mdo-chat-message">Looks good to me</span><br><span class="mdo-font-xx-small mdo-text-secondary">Today 6:37 PM</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mdo-section">
+            <div class="mdo-add-inline mdo-padding-left-medium">
+                <div class="mdo-card">                    
+                    <div><div class="mdo-text mdo-text-secondary">Type to add a note</div></div>
+                    <div class="mdo-atom"><span class="mdo-button mdo-vertical-center"><i class="mdo-icon-send-chat"></i></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="asset-edit" class="mdo-modal" data-modal-width="700px" data-modal-height="90%">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div><div class="mdo-text mdo-font-x-large">Hierarchy data request</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div class="mdo-section mdo-padding-top-small">
+            <ul class="mdo-wizard" data-tabset="asset-request-wizard">
+                <li class="mdo-tab mdo-selected">
+                    <div class="mdo-circle">1</div>
+                    <div class="mdo-connector"></div>
+                </li>
+                <li class="mdo-tab">
+                    <div class="mdo-circle">2</div>
+                    <div class="mdo-connector"></div>
+                </li>
+                <li class="mdo-tab">
+                    <div class="mdo-circle">3</div>
+                    <div class="mdo-connector"></div>
+                </li>
+                <li class="mdo-tab">
+                    <div class="mdo-circle">4</div>
+                </li>
+            </ul>
+        </div>
+        <div>
+
+            <div data-tabset="asset-request-wizard" data-tab="0" class="mdo-tab-content mdo-selected mdo-fill-height mdo-padding-top-large">
+                
+                <div class="mdo-card mdo-hover mdo-contained mdo-clickable">
+                    <div class="mdo-atom"><span class="mdo-button"><i class="mdo-icon-chevron-down"></i></span></div>
+                    <div>
+                        <div class="mdo-text">
+                            <span class="mdo-option mdo-option-square ">
+                                <input type="checkbox" name="asset-change-group" id="asset-change-1" checked>
+                                <label for="asset-change-1">Function locations (2/2)</label>
+                            </span>
+                         </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="mdo-card mdo-hover mdo-contained mdo-clickable mdo-padding-left-medium">
+                    <div class="mdo-atom mdo-padding-left-large"><span class="mdo-button mdo-hidden" data-sidesheet="#attribute-mapping" data-sidesheet-parent="#sidesheet-base"><i class="mdo-icon-mapping"></i></span></div>
+                    <div>
+                        <div class="mdo-text">
+                            <span class="mdo-option mdo-option-square ">
+                                <input type="checkbox" name="asset-change-group" id="asset-change-3" checked>
+                                <label for="asset-change-3">FLOC-001</label>
+                            </span>
+                         </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="mdo-card mdo-hover mdo-contained mdo-clickable mdo-padding-left-medium">
+                    <div class="mdo-atom mdo-padding-left-large"><span class="mdo-button mdo-hidden" data-sidesheet="#attribute-mapping" data-sidesheet-parent="#sidesheet-base"><i class="mdo-icon-mapping"></i></span></div>
+                    
+                    <div>
+                        <div class="mdo-text">
+                            <span class="mdo-option mdo-option-square ">
+                                <input type="checkbox" name="asset-change-group" id="asset-change-4" checked>
+                                <label for="asset-change-4">FLOC-002</label>
+                            </span>
+                         </div>
+                    </div>
+                </div>
+                
+                <div class="mdo-card mdo-hover mdo-contained mdo-clickable">
+                    <div class="mdo-atom"><span class="mdo-button"><i class="mdo-icon-chevron-right"></i></span></div>
+                    <div>
+                        <div class="mdo-text">
+                            <span class="mdo-option mdo-option-square ">
+                                <input type="checkbox" name="asset-change-group" id="asset-change-5" checked>
+                                <label for="asset-change-5">Equipment (2/12)</label>
+                            </span>
+                         </div>
+                    </div>
+
+                   
+                   
+                </div>
+                <div class="mdo-card mdo-hover mdo-contained mdo-clickable">
+                    <div class="mdo-atom"><span class="mdo-button"><i class="mdo-icon-chevron-right"></i></span></div>
+                    <div>
+                        <div class="mdo-text">
+                            <span class="mdo-option mdo-option-square ">
+                                <input type="checkbox" name="asset-change-group" id="asset-change-6" >
+                                <label for="asset-change-6">Maintenance items (0/8)</label>
+                            </span>
+                         </div>
+                    </div>
+                    
+                </div>
+           
+       
+            </div>
+            <div data-tabset="asset-request-wizard" data-tab="1" class="mdo-tab-content mdo-padding-top-large">
+                <div class="mdo-field">
+                    <span class="mdo-field-label">Functional location</span>
+                    
+                    <div class="mdo-field-input"><div class="mdo-text"><span class="mdo-label mdo-float-left">Cost center</span></div></div>
+                </div>
+                <div class="mdo-field">
+                    <span class="mdo-field-label">Equipment</span>
+                    
+                    <div class="mdo-field-input"><div class="mdo-text"><span class="mdo-label mdo-float-left">Work center</span></div></div>
+                </div>
+            </div>
+            <div data-tabset="asset-request-wizard" data-tab="2" class="mdo-tab-content mdo-padding-top-large">
+                <table class="mdo-table mdo-module mdo-excel">
+                    <thead>
+                        <tr>
+                            <th><span class="mdo-text">Hierarchy</span></th>
+                            <th><span class="mdo-text">Records</span></th>
+                            <th><span class="mdo-text">New value</span></th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>
+                            <td class="mdo-no-padding-left mdo-cell-disabled">
+                                <div class="mdo-card mdo-contained mdo-padding-left-medium">
+                                    <div class="mdo-atom"><span class="mdo-button "><i class="mdo-icon-chevron-down"></i></span></div>
+                                    <div><div class="mdo-text"><span class="mdo-margin-right-medium"></span>Functional location</div></div>
+                                </div>
+                            </td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text">30</div></td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text"></div></td>
+                           
+                        </tr>
+                            
+                        <tr>
+                            <td class="mdo-no-padding-left mdo-cell-disabled">
+                                <div class="mdo-card mdo-contained">
+                                    <div class="mdo-atom"><span class="mdo-button mdo-hidden"><i class="mdo-icon-chevron-down"></i></span><span class="mdo-button "><i class="mdo-icon-chevron-down"></i></span></div>
+                                    <div><div class="mdo-text"><span class="mdo-margin-right-medium"></span>Cost center</div></div>
+                                </div>
+                            </td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text">30</div></td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text"></div></td>
+                          
+                        </tr>
+                        
+                        <tr>
+                            <td class="mdo-no-padding-left mdo-cell-disabled">
+                                <div class="mdo-card mdo-contained">
+                                    <div class="mdo-atom mdo-padding-left-medium"><span class="mdo-button mdo-hidden"><i class="mdo-icon-chevron-down"></i></span><span class="mdo-button mdo-hidden" data-sidesheet="#attribute-mapping" data-sidesheet-parent="#sidesheet-base"><i class="mdo-icon-mapping"></i></span></div>
+                                    <div><div class="mdo-text"><span class="mdo-margin-right-medium"></span>3274782364</div></div>
+                                </div>
+                            </td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text">20</div></td>
+                            <td><div class="mdo-text"></div></td>
+                           
+                        </tr>
+                        <tr>
+                            <td class="mdo-no-padding-left mdo-cell-disabled">
+                                <div class="mdo-card mdo-contained">
+                                    <div class="mdo-atom mdo-padding-left-medium"><span class="mdo-button mdo-hidden"><i class="mdo-icon-chevron-down"></i></span><span class="mdo-button mdo-hidden" data-sidesheet="#attribute-mapping" data-sidesheet-parent="#sidesheet-base"><i class="mdo-icon-mapping"></i></span></div>
+                                    <div><div class="mdo-text"><span class="mdo-margin-right-medium"></span>3274785487</div></div>
+                                </div>
+                            </td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text">10</div></td>
+                            <td><div class="mdo-text"></div></td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="mdo-no-padding-left mdo-cell-disabled">
+                                <div class="mdo-card mdo-contained mdo-padding-left-medium">
+                                    <div class="mdo-atom"><span class="mdo-button "><i class="mdo-icon-chevron-down"></i></span></div>
+                                    <div><div class="mdo-text"><span class="mdo-margin-right-medium"></span>Equipment</div></div>
+                                </div>
+                            </td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text">50</div></td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text"></div></td>
+                           
+                        </tr>
+                            
+                        <tr>
+                            <td class="mdo-no-padding-left mdo-cell-disabled">
+                                <div class="mdo-card mdo-contained">
+                                    <div class="mdo-atom"><span class="mdo-button mdo-hidden"><i class="mdo-icon-chevron-down"></i></span><span class="mdo-button "><i class="mdo-icon-chevron-down"></i></span></div>
+                                    <div><div class="mdo-text"><span class="mdo-margin-right-medium"></span>Work center</div></div>
+                                </div>
+                            </td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text">50</div></td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text"></div></td>
+                          
+                        </tr>
+                        
+                        <tr>
+                            <td class="mdo-no-padding-left mdo-cell-disabled">
+                                <div class="mdo-card mdo-contained">
+                                    <div class="mdo-atom mdo-padding-left-medium"><span class="mdo-button mdo-hidden"><i class="mdo-icon-chevron-down"></i></span><span class="mdo-button mdo-hidden" data-sidesheet="#attribute-mapping" data-sidesheet-parent="#sidesheet-base"><i class="mdo-icon-mapping"></i></span></div>
+                                    <div><div class="mdo-text"><span class="mdo-margin-right-medium"></span>38746873264</div></div>
+                                </div>
+                            </td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text">30</div></td>
+                            <td><div class="mdo-text"></div></td>
+                           
+                        </tr>
+                        <tr>
+                            <td class="mdo-no-padding-left mdo-cell-disabled">
+                                <div class="mdo-card mdo-contained">
+                                    <div class="mdo-atom mdo-padding-left-medium"><span class="mdo-button mdo-hidden"><i class="mdo-icon-chevron-down"></i></span><span class="mdo-button mdo-hidden" data-sidesheet="#attribute-mapping" data-sidesheet-parent="#sidesheet-base"><i class="mdo-icon-mapping"></i></span></div>
+                                    <div><div class="mdo-text"><span class="mdo-margin-right-medium"></span>38745673264</div></div>
+                                </div>
+                            </td>
+                            <td class="mdo-cell-disabled"><div class="mdo-text">20</div></td>
+                            <td><div class="mdo-text"></div></td>
+                            
+                        </tr>
+              
+                    </tbody>
+                </table>
+            </div>
+            <div data-tabset="asset-request-wizard" data-tab="3" class="mdo-tab-content mdo-padding-top-large">
+                <br><br><br><br><br>
+                <p class="mdo-text-center">
+                    Updating asset hierarchy...
+                </p>
+                <div class="mdo-progress mdo-margin-top-large mdo-margin-bottom-medium" data-progress="20%"><span style="width: 20%;"></span></div>
+                
+            </div>
+
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div></div>
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close">Next</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="asset-flow" class="mdo-modal" data-modal-width="600px" data-modal-height="250px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                
+                <div><div class="mdo-text mdo-font-x-large">Copy from library</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div>
+
+            <div class="mdo-field mdo-field-has-control mdo-fill-width mdo-margin-top-medium">
+                <span class="mdo-field-label mdo-required">Part creation flow</span>
+                <div class="mdo-field-input">
+                    <input type="text" placeholder="Select a flow...">
+                    <span class="mdo-button"><i class="mdo-icon-chevron-down"></i></span>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div></div>
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close">Copy</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="inbox-view" class="mdo-modal" data-modal-width="600px" data-modal-height="320px">
+    <div class="mdo-card mdo-vertical">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-all-medium">
+                <div><div class="mdo-text mdo-font-x-large">New view</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div class="mdo-padding-top-medium mdo-padding-left-medium mdo-padding-right-medium mdo-allow-overflow">      
+            <div class="mdo-field">
+                <span class="mdo-field-label mdo-required">View name</span>
+                <div class="mdo-field-input"><input type="text" value="New view"></div>
+            </div>
+            <div class="mdo-field mdo-field-has-control">
+                <span class="mdo-field-label mdo-required">Dataset</span>
+                <div class="mdo-field-input">
+                    <input type="text" placeholder="Select a dataset...">
+                    <span class="mdo-button"><i class="fa-light fa-chevron-down"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-all-medium">
+                <div class="mdo-atom"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div>
+              
+                </div>
+                <div class="mdo-atom"><span class="mdo-button mdo-fixed-button mdo-major mdo-modal-close">Add</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="confirm-new-asset" class="mdo-modal" data-modal-width="600px" data-modal-height="250px">
+    <div class="mdo-card mdo-vertical mdo-padding-left-medium mdo-padding-right-medium mdo-padding-bottom-medium">
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium mdo-padding-bottom-medium">
+                <div><div class="mdo-text mdo-font-x-large">Confirmation</div></div>
+                <div class="mdo-atom"><span class="mdo-button  mdo-modal-close"><i class="mdo-icon-close"></i></span></div>
+            </div>
+        </div>
+        <div>
+            <p>No equipment found for the scanned barcode. Would you like to create a new asset?</p>
+        </div>
+        <div class="mdo-section">
+            <div class="mdo-card mdo-padding-top-medium">
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-modal-close">Cancel</span></div>
+                <div></div>
+                <div class="mdo-atom mdo-allow-overflow"><span class="mdo-button mdo-major mdo-modal-close">Create a new asset</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
